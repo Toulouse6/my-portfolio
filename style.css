@@ -2,7 +2,7 @@
     font-family: 'Mona Sans Regular';
     src: url('/assets/fonts/MonaSans-Regular.ttf') format('truetype');
     font-display: swap;
-    font-weight: 600 !important;
+    font-weight: 600;
 }
 
 
@@ -19,6 +19,7 @@ body {
     font-family: 'Mona Sans Regular', sans-serif;
     line-height: 1.6;
     color: #222222;
+    background: #15171D;
     background: linear-gradient(90deg, rgba(21, 23, 29, 1) 0%, rgba(24, 26, 38, 1) 70%);
     overflow-x: hidden;
     margin: 0 auto;
@@ -74,7 +75,6 @@ header {
     margin: 0;
     border-radius: 50%;
     border: 2px solid #E2E8F0;
-    ;
 }
 
 .profile-details {
@@ -145,7 +145,6 @@ section h2 {
 }
 
 nav a,
-.project .description h3,
 .project p {
     font-size: 1.1vw;
 }
@@ -160,7 +159,7 @@ nav a,
     gap: 0.3rem;
     margin-top: 0.5rem;
     padding: 0;
-    align-items: left;
+    align-items: flex-start;
 }
 
 .tech-stack img {
@@ -188,7 +187,8 @@ nav a,
 
 .project {
     padding: 4%;
-    background: linear-gradient(90deg, rgba(30, 34, 46, 1) 0%, rgba(25, 27, 37, 1) 70%);
+    background: #15171D;
+    background: linear-gradient(90deg, rgba(21, 23, 29, 1) 0%, rgba(24, 26, 38, 1) 70%);
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -219,6 +219,13 @@ nav a,
 .project .description h3 {
     color: #E2E8F0;
     margin-top: 5%;
+    font-size: 1.6vw;
+}
+
+.project span {
+    color: white;
+    line-height: 1.5;
+    font-size: 0.8vw;
 }
 
 .project .description p {
@@ -243,7 +250,6 @@ nav a,
 footer {
     text-align: center;
     padding: 1rem 0;
-    margin-top: 2rem;
     height: 10vh;
     display: flex;
     align-items: center;
@@ -277,13 +283,16 @@ footer {
     }
 
     nav a,
-    .project .description h3,
     .project p {
         font-size: 1.4vw;
     }
 
     .project a {
         margin-top: 0.8rem;
+        font-size: 1.1vw;
+    }
+
+    .project span {
         font-size: 1.1vw;
     }
 
@@ -319,15 +328,19 @@ footer {
         letter-spacing: 0.5px;
     }
 
+    nav a,
     .my-des,
+    .project p,
     .section-des {
         font-size: 1.8vw;
     }
 
-    nav a,
-    .project .description h3,
-    .project p {
-        font-size: 2vw;
+    .project .description h3 {
+        font-size: 2.4vw;
+    }
+
+    .project span {
+        font-size: 1.3vw;
     }
 
     .project a {
@@ -341,97 +354,110 @@ footer {
         width: 2.1vw !important;
     }
 
+}
 
-    @media(max-width: 720px) {
+@media(max-width: 720px) {
 
-        .tech-stack img {
-            height: 4vw !important;
-            width: 4vw !important;
-        }
+    .tech-stack img {
+        height: 4vw !important;
+        width: 4vw !important;
+    }
 
-        .profile-section {
-            width: 95%;
-        }
+    .profile-section {
+        width: 95%;
+    }
 
-        .project a {
-            margin-top: 0.5rem;
-            font-size: 2vw;
-        }
+    .project span {
+        font-size: 2vw;
+    }
 
-        .project-gallery {
-            grid-template-columns: 1fr;
-        }
+    .project a {
+        margin-top: 0.5rem;
+        font-size: 2vw;
+    }
 
-        .my-des,
-        .section-des {
-            font-size: 2.2vw;
-        }
+    .project-gallery {
+        grid-template-columns: 1fr;
+    }
 
-        .my-des {
-            padding-top: 0.5rem;
-        }
+    .project .description h3 {
+        font-size: 3vw;
+    }
 
-        nav a,
-        .project .description h3,
-        header p {
-            font-size: 2.2vw;
-        }
+    .project p,
+    .my-des,
+    .section-des {
+        font-size: 2.5vw;
+    }
 
+    .my-des {
+        padding-top: 0.5rem;
+    }
+
+    nav a,
+    header p {
+        font-size: 2.8vw;
+    }
+
+}
+
+
+@media(max-width: 500px) {
+
+    header {
+        padding: 6.5rem 1rem 0;
+    }
+
+    .profile-details h1 {
+        font-size: 4vw;
+        letter-spacing: 4px;
+        width: 100%;
+        line-height: 1.6;
+        margin: 0.5rem 0;
+    }
+
+    .profile-section {
+        width: 100%;
+    }
+
+    section h2 {
+        font-size: 2.5vh;
+        width: 100%;
+    }
+
+    .project-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .my-des,
+    .section-des {
+        font-size: 3.5vw;
+    }
+
+    .tech-stack img {
+        height: 4.5vw !important;
+        width: 4.5vw !important;
+    }
+
+    nav a,
+    header p {
+        font-size: 3.5vw;
+    }
+
+    .project span {
+        font-size: 4vw;
     }
 
 
-
-    @media(max-width: 520px) {
-
-        header {
-            padding: 6.5rem 1rem 0;
-        }
-
-        .profile-details h1 {
-            font-size: 4vw;
-            letter-spacing: 4px;
-            width: 100%;
-            line-height: 1.6;
-            margin: 0.5rem 0;
-        }
-
-        .profile-section {
-            width: 98%;
-        }
-
-        section h2 {
-            font-size: 2.5vh;
-            width: 100%;
-        }
-
-        .project-gallery {
-            grid-template-columns: 1fr;
-        }
-
-        .my-des,
-        .section-des {
-            font-size: 2.5vw;
-        }
-
-        .tech-stack img {
-            height: 4.5vw !important;
-            width: 4.5vw !important;
-        }
-
-        nav a,
-        .project .description h3,
-        header p {
-            font-size: 2.5vw;
-        }
-
-        .project a {
-            margin-top: 0.5rem;
-            font-size: 2.5vw;
-        }
-
-
+    .project a {
+        margin-top: 1rem 0 2rem;
+        font-size: 2.5vw;
+        line-height: 1.8;
     }
 
+    footer {
+        margin-top: 0;
+    }
 
 
 }
