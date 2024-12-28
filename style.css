@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'Mona Sans Regular';
     src: url('/assets/fonts/MonaSans-Regular.ttf') format('truetype');
-    font-weight: 400;
     font-display: swap;
+    font-weight: 600 !important;
 }
 
 
@@ -17,40 +17,29 @@ html,
 body {
     max-width: 100%;
     font-family: 'Mona Sans Regular', sans-serif;
-    font-variation-settings: 'wght' 400;
     line-height: 1.6;
     color: #222222;
-    background: #0d1116;
-    margin: 0;
+    background: linear-gradient(90deg, rgba(21, 23, 29, 1) 0%, rgba(24, 26, 38, 1) 70%);
     overflow-x: hidden;
     margin: 0 auto;
 }
 
-
-/* MENU */
+/* NAVIGATION MENU */
 
 nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    color: #E2E8F0;
-    border-bottom: 1px solid #9298a0;
-    background: #0d1116;
-    z-index: 1000;
-    padding: 0.5rem 0;
     display: flex;
     justify-content: center;
-    margin: auto;
-    text-align: center;
-    height: 6vh;
-    align-items: center;
+    gap: 3rem;
+    padding: 1rem 0 1rem;
+    width: 100%;
+    position: fixed;
+    background-color: #E2E8F0;
 }
 
 nav a {
-    margin: 0 1rem;
     text-decoration: none;
-    color: #9298a0;
+    letter-spacing: 3px;
+    color: rgba(25, 27, 37);
     text-transform: uppercase;
 }
 
@@ -58,99 +47,106 @@ nav a:hover {
     color: white;
 }
 
-
 /* HEADER */
 
 header {
-    margin: auto;
-    background: #0d1116;
-    color: #fff;
-    padding: 7em 14rem 2rem;
-    text-align: center;
-    border-bottom: 1px solid #9298a0;
+    padding-top: 9rem;
+    border-bottom: 1px solid #E2E8F0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 70%;
+    margin-bottom: 1rem;
+}
+
+.headshot {
+    width: 150px;
+    padding: 0;
+    height: 150px;
+    margin: 0;
+    border-radius: 50%;
+    border: 2px solid #E2E8F0;
     ;
 }
 
-header a {
-    color: #5793f1;
+.profile-details {
+    flex-grow: 1;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.profile-details h1 {
+    font-family: 'Mona Sans Regular', sans-serif;
+    text-transform: uppercase;
+    font-size: 4vh;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+    color: #E2E8F0;
+}
+
+.contact {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.contact a {
+    color: #E2E8F0;
     text-decoration: none;
 }
 
-header a:hover {
+.contact a:hover {
     color: white;
 }
 
-header a:hover {
-    text-decoration: underline;
+.my-des {
+    color: white;
+    margin-top: 0.8rem;
+    line-height: 1.6;
 }
 
+/* PROJECTS CONTAINER*/
 
-/* TITLES */
 
-
-header h1 {
-    font-family: 'Mona Sans Regular', sans-serif;
-    text-transform: uppercase;
-    font-size: 2.5vw;
-    margin: auto auto 0.8rem;
-    letter-spacing: 3px;
-    text-align: center;
-    line-height: 1.4;
+.projects-container {
     width: 100%;
+    padding-top: 1rem;
 }
-
-header .contact {
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    color: rgb(194, 200, 209);
-    text-align: center;
-    line-height: 1.4;
-    width: 100%;
-    text-align: center;
-    margin: auto;
-}
-
-header p {
-    line-height: 1.5;
-    width: 100%;
-    text-align: center;
-    margin: 1rem auto;
-    color: #EDF2F7;
-    text-align: center;
-}
-
 
 /* SECTION */
 
 section {
     max-width: 70%;
-    padding: 4rem 2rem 2rem;
+    padding: 2.5rem 2rem 2rem;
     margin: 2rem auto;
-    background: #0d1116;
-    border-radius: 15px;
-    border: 1px solid #9298a0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
-    margin-bottom: 1rem;
-    color: white;
+    margin-bottom: 1.2rem;
+    color: #E2E8F0;
     font-size: 3.5vh;
 }
 
 
+.my-des,
 .section-des {
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     width: 100%;
-    margin-bottom: 2rem;
-    color: rgb(194, 200, 209);
+    color: white;
+    margin: 0.5rem 0 1.5rem;
+    line-height: 1.6;
 }
 
 nav a,
 .project .description h3,
-.project p,
-header p {
+.project p {
     font-size: 1.1vw;
 }
 
@@ -192,11 +188,11 @@ header p {
 
 .project {
     padding: 4%;
-    background: #0d1116;
+    background: linear-gradient(90deg, rgba(30, 34, 46, 1) 0%, rgba(25, 27, 37, 1) 70%);
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    border: 1px solid white;
+    border: 2px solid #E2E8F0;
 }
 
 
@@ -221,16 +217,16 @@ header p {
 }
 
 .project .description h3 {
-    color: white;
+    color: #E2E8F0;
     margin-top: 5%;
 }
 
 .project .description p {
-    color: rgb(194, 200, 209);
+    color: white;
 }
 
 .project a {
-    color: #5793f1;
+    color: #E2E8F0;
     display: inline-flex;
     flex-wrap: nowrap;
     margin: 0.8rem 0.8rem auto 0.1rem;
@@ -248,15 +244,14 @@ footer {
     text-align: center;
     padding: 1rem 0;
     margin-top: 2rem;
-    background: #0d1116;
-    color: #E2E8F0;
     height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 4rem auto 0;
-    font-weight: 500;
-    border-top: 1px solid #9298a0;
+    border-top: 2px solid #E2E8F0;
+    background-color: #E2E8F0;
+    letter-spacing: 3px;
 }
 
 
@@ -265,22 +260,25 @@ footer {
 @media(max-width: 1300px) {
 
     header {
-        padding: 7rem 1.5rem 2rem;
+        padding: 7.5rem 1.5rem 0;
     }
 
     section {
         max-width: 80%;
     }
 
+    .profile-section {
+        width: 85%;
+    }
+
+    .my-des,
     .section-des {
         font-size: 1.4vw;
-        width: 90%;
     }
 
     nav a,
     .project .description h3,
-    .project p,
-    header p {
+    .project p {
         font-size: 1.4vw;
     }
 
@@ -290,12 +288,11 @@ footer {
     }
 
     .my-des {
-        width: 90%;
         padding-top: 1rem;
     }
 
-    header h1 {
-        font-size: 3vw;
+    .profile-details h1 {
+        font-size: 2.8vw;
     }
 
     .tech-stack img {
@@ -310,23 +307,26 @@ footer {
 @media(max-width: 1024px) {
 
     header {
-        padding: 7rem 1.2rem 2rem;
+        padding: 8rem 1.2rem 0;
     }
 
-    header h1 {
-        font-size: 3.8vw;
+    .profile-section {
+        width: 92%;
+    }
+
+    .profile-details h1 {
+        font-size: 3.2vw;
         letter-spacing: 0.5px;
     }
 
+    .my-des,
     .section-des {
         font-size: 1.8vw;
-        width: 98%;
     }
 
     nav a,
     .project .description h3,
-    .project p,
-    header p {
+    .project p {
         font-size: 2vw;
     }
 
@@ -349,6 +349,10 @@ footer {
             width: 4vw !important;
         }
 
+        .profile-section {
+            width: 95%;
+        }
+
         .project a {
             margin-top: 0.5rem;
             font-size: 2vw;
@@ -358,19 +362,17 @@ footer {
             grid-template-columns: 1fr;
         }
 
+        .my-des,
         .section-des {
             font-size: 2.2vw;
         }
 
         .my-des {
-            width: 95%;
-            font-size: 2.2vw;
             padding-top: 0.5rem;
         }
 
         nav a,
         .project .description h3,
-        .project p,
         header p {
             font-size: 2.2vw;
         }
@@ -382,33 +384,33 @@ footer {
     @media(max-width: 520px) {
 
         header {
-            padding: 6.5rem 1rem 1.5rem;
+            padding: 6.5rem 1rem 0;
         }
 
-        header h1 {
+        .profile-details h1 {
             font-size: 4vw;
-            letter-spacing: 1px;
+            letter-spacing: 4px;
             width: 100%;
-            line-height: 1.5;
+            line-height: 1.6;
+            margin: 0.5rem 0;
+        }
+
+        .profile-section {
+            width: 98%;
         }
 
         section h2 {
-            font-size: 3vh;
+            font-size: 2.5vh;
             width: 100%;
-        }
-
-
-        header .contact {
-            font-size: 2.5vw;
         }
 
         .project-gallery {
             grid-template-columns: 1fr;
         }
 
+        .my-des,
         .section-des {
             font-size: 2.5vw;
-            width: 100%;
         }
 
         .tech-stack img {
@@ -418,9 +420,8 @@ footer {
 
         nav a,
         .project .description h3,
-        .project p,
         header p {
-            font-size: 2.8vw;
+            font-size: 2.5vw;
         }
 
         .project a {
