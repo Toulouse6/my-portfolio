@@ -124,7 +124,7 @@ header {
 
 section {
     max-width: 70%;
-    padding: 0 2rem 2rem;
+    padding: 0.5rem 2rem;
     margin: 2rem auto;
 }
 
@@ -474,6 +474,7 @@ footer {
 
     section {
         padding-top: 0rem;
+        max-width: 100%;
     }
 
     section h2 {
@@ -483,6 +484,7 @@ footer {
 
     .project-gallery {
         grid-template-columns: 1fr;
+        width: 100%;
     }
 
     nav,
