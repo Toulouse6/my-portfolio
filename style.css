@@ -511,7 +511,7 @@ footer {
     }
 
     .tech-stack-header-mobile {
-        margin: 1rem;
+        margin: 1.5rem 0 1.5rem 0;
         display: flex !important;  
         flex-wrap: wrap; 
         justify-content: start; 
