@@ -74,7 +74,7 @@ header {
     height: 150px;
     margin: 0;
     border-radius: 50%;
-    border: 2px solid #E2E8F0;
+    border: 2px solid #A3B3C9;
 }
 
 .profile-details {
@@ -89,7 +89,7 @@ header {
     font-size: 4vh;
     margin-bottom: 0.5rem;
     letter-spacing: 2px;
-    color: #E2E8F0;
+    color: #A3B3C9;
 }
 
 .contact {
@@ -98,7 +98,7 @@ header {
 }
 
 .contact a {
-    color: #E2E8F0;
+    color: #A3B3C9;
     text-decoration: none;
 }
 
@@ -130,7 +130,7 @@ section {
 
 section h2 {
     margin-bottom: 1.2rem;
-    color: #E2E8F0;
+    color: #A3B3C9;
     font-size: 3.5vh;
 }
 
@@ -149,7 +149,21 @@ nav a,
     font-size: 1.1vw;
 }
 
-/* Stack */
+
+/* STACK ICONS */
+
+.tech-stack-header {
+    width: 80%;
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+    padding: 0;
+    align-items: flex-start;
+}
+
 .tech-stack {
     width: fit-content;
     display: flex;
@@ -162,6 +176,8 @@ nav a,
     align-items: flex-start;
 }
 
+
+.tech-stack-header img,
 .tech-stack img {
     height: 2.2vw !important;
     width: 2.2vw !important;
@@ -169,10 +185,32 @@ nav a,
     object-fit: contain;
     transition: filter 0.3s ease;
     border: none;
+    position: relative;
+    z-index: 1; 
 }
 
+.tech-stack-header img:hover,
 .tech-stack img:hover {
     filter: brightness(1.2);
+}
+
+.tech-stack-header img:hover::after,
+.tech-stack img:hover::after {
+    content: attr(alt);
+    position: absolute;
+    bottom: 120%; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 8px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 12px;
+    z-index: 10; 
+    pointer-events: none; 
+    visibility: visible;
+    opacity: 1;
 }
 
 
@@ -217,7 +255,7 @@ nav a,
 }
 
 .project .description h3 {
-    color: #E2E8F0;
+    color: #A3B3C9;
     margin-top: 5%;
     font-size: 1.6vw;
 }
@@ -233,7 +271,7 @@ nav a,
 }
 
 .project a {
-    color: #E2E8F0;
+    color: #A3B3C9;
     display: inline-flex;
     flex-wrap: nowrap;
     margin: 0.8rem 0.8rem auto 0.1rem;
@@ -304,6 +342,7 @@ footer {
         font-size: 2.8vw;
     }
 
+    .tech-stack-header img,
     .tech-stack img {
         height: 2.5vw !important;
         width: 2.5vw !important;
@@ -348,19 +387,28 @@ footer {
         font-size: 1.4vw;
     }
 
-
+    .tech-stack-header img,
     .tech-stack img {
         height: 2.1vw !important;
         width: 2.1vw !important;
+    }
+
+    .tech-stack-header {
+        width: 90%;
     }
 
 }
 
 @media(max-width: 720px) {
 
+    .tech-stack-header img,
     .tech-stack img {
         height: 4vw !important;
         width: 4vw !important;
+    }
+
+    .tech-stack-header {
+        width: 100%;
     }
 
     .profile-section {
@@ -434,6 +482,7 @@ footer {
         font-size: 3.5vw;
     }
 
+    .tech-stack-header img,
     .tech-stack img {
         height: 4.5vw !important;
         width: 4.5vw !important;
