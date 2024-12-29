@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Mona Sans Regular';
-    src: url('/assets/fonts/MonaSans-Regular.ttf') format('truetype');
+    src: url('assets/fonts/MonaSans-Regular.ttf') format('truetype');
     font-display: swap;
     font-weight: 600;
 }
@@ -11,6 +11,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 
 
 html,
@@ -144,6 +145,10 @@ section h2 {
     line-height: 1.6;
 }
 
+.section-des {
+    margin-bottom: 0;
+}
+
 footer,
 nav,
 .project p {
@@ -154,7 +159,6 @@ nav,
 /* STACK ICONS */
 
 .tech-stack-header {
-    width: 80%;
     display: flex;
     overflow-x: auto;
     flex-wrap: wrap;
@@ -162,7 +166,12 @@ nav,
     gap: 0.8rem;
     margin-bottom: 1rem;
     padding: 0;
+    width: 80%;
     align-items: flex-start;
+}
+
+.tech-stack-header-mobile {
+    display: none !important;
 }
 
 .tech-stack {
@@ -470,6 +479,7 @@ footer {
 
     .profile-section {
         width: 100%;
+        align-items: start;
     }
 
     section {
@@ -487,16 +497,32 @@ footer {
         width: 100%;
     }
 
-    nav,
+    .headshot {
+        margin-top: 2rem;
+    }
+
     .my-des,
     .section-des {
         font-size: 3.5vw;
     }
 
-    .tech-stack-header img,
-    .tech-stack img {
-        height: 4.5vw !important;
-        width: 4.5vw !important;
+    .tech-stack-header {
+        display: none;  
+    }
+
+    .tech-stack-header-mobile {
+        margin: 1rem;
+        display: flex !important;  
+        flex-wrap: wrap; 
+        justify-content: start; 
+        gap: 10px;  
+        width: 100%;
+    }
+
+    .tech-stack-header-mobile img {
+        height: 4.5vw;  
+        width: 4.5vw;  
+        object-fit: contain;  
     }
 
     header p {
@@ -507,10 +533,9 @@ footer {
         font-size: 4vw;
     }
 
-
     .project a {
         margin-top: 1rem 0 2rem;
-        font-size: 2.5vw;
+        font-size: 3vw;
         line-height: 1.8;
     }
 
