@@ -34,6 +34,7 @@ nav {
     width: 100%;
     position: fixed;
     background-color: #495769;
+    z-index: 2;
 }
 
 nav a {
@@ -122,6 +123,22 @@ header {
 }
 
 /* SECTION */
+
+.active-tech {
+    border: 2px solid #b0cfdf;
+    border-radius: 50%;
+    filter: brightness(1.5);
+}
+#filtered-section {
+    margin-top: 2rem;
+}
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
 
 section {
     max-width: 70%;
