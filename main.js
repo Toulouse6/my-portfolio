@@ -41,7 +41,7 @@ function filterProjects(selectedTech) {
         filteredSection.id = "filtered-section";
         document.querySelector(".projects-container").prepend(filteredSection);
     }
-    filteredSection.innerHTML = `<h2>Filtered Projects: ${selectedTech}</h2>`;
+    filteredSection.innerHTML = `<h2>${selectedTech}</h2>`;
     const projectGallery = document.createElement("div");
     projectGallery.classList.add("project-gallery");
     filteredSection.appendChild(projectGallery);
@@ -70,7 +70,7 @@ function filterProjects(selectedTech) {
     // Add a "No results" message
     if (!anyVisible) {
         const noResults = document.createElement("p");
-        noResults.textContent = "No projects match the selected technology.";
+        noResults.textContent = "Yet to be uploaded";
         noResults.style.color = "#b0cfdf";
         noResults.style.textAlign = "center";
         noResults.style.marginTop = "20px";
