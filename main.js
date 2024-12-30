@@ -1,8 +1,9 @@
-let activeTech = null; // Track selected tech stack
-const originalSectionMap = new Map(); // Map to store the original parent of each project
+let activeTech = null; // Track selected stack
+const originalSectionMap = new Map(); // Map to store original parent section
+
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Store the original parent section for each project
+    // Store original parent section 
     document.querySelectorAll(".project").forEach(project => {
         originalSectionMap.set(project, project.parentElement);
     });
@@ -15,7 +16,7 @@ function filterProjects(selectedTech) {
         return;
     }
 
-    resetFilter(); // Always reset before applying a new filter
+    resetFilter(); // Reset before applying filter
 
     const projects = document.querySelectorAll(".project");
     const sections = document.querySelectorAll("section:not(#filtered-section)");
@@ -27,14 +28,14 @@ function filterProjects(selectedTech) {
     // Set active tech
     activeTech = selectedTech;
 
-    // Remove active-tech class from all icons
+    // Remove active-tech class
     techIcons.forEach(icon => icon.classList.remove("active-tech"));
 
-    // Highlight the currently active tech icon
+    // Highlight active
     const activeIcon = document.querySelector(`[data-tech="${selectedTech}"]`);
     if (activeIcon) activeIcon.classList.add("active-tech");
 
-    // Create or clear the filtered section
+    // Create / clear filtered section
     if (!filteredSection) {
         filteredSection = document.createElement("section");
         filteredSection.id = "filtered-section";
@@ -45,7 +46,7 @@ function filterProjects(selectedTech) {
     projectGallery.classList.add("project-gallery");
     filteredSection.appendChild(projectGallery);
 
-    // Filter projects and move them to the filtered section
+    // Filter projects & move the filtered section
     let anyVisible = false;
     projects.forEach(project => {
         const techs = project.getAttribute("data-techs") || "";
@@ -58,7 +59,7 @@ function filterProjects(selectedTech) {
         }
     });
 
-    // Hide all original sections and their titles/descriptions
+    // Hide all original sections and titles/descriptions
     sections.forEach(section => section.classList.add("hidden"));
     sectionTitles.forEach(title => title.classList.add("hidden"));
     sectionDescriptions.forEach(desc => desc.classList.add("hidden"));
@@ -66,7 +67,7 @@ function filterProjects(selectedTech) {
     // Show filtered section
     filteredSection.classList.remove("hidden");
 
-    // Add a "No results" message if no projects are visible
+    // Add a "No results" message
     if (!anyVisible) {
         const noResults = document.createElement("p");
         noResults.textContent = "No projects match the selected technology.";
@@ -88,10 +89,10 @@ function resetFilter() {
     // Reset active tech
     activeTech = null;
 
-    // Remove active-tech class from all icons
+    // Remove active-tech class
     techIcons.forEach(icon => icon.classList.remove("active-tech"));
 
-    // Restore all projects to their original sections
+    // Restore all projects to original sections
     projects.forEach(project => {
         const originalParent = originalSectionMap.get(project);
         if (originalParent) {
@@ -100,12 +101,12 @@ function resetFilter() {
         }
     });
 
-    // Restore all sections and their titles/descriptions
+    // Restore all sections and titles/descriptions
     sections.forEach(section => section.classList.remove("hidden"));
     sectionTitles.forEach(title => title.classList.remove("hidden"));
     sectionDescriptions.forEach(desc => desc.classList.remove("hidden"));
 
-    // Remove the filtered section if it exists
+    // Remove the filtered section if exists
     if (filteredSection) {
         filteredSection.remove();
     }
