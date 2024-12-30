@@ -74,7 +74,7 @@ header {
     height: 150px;
     margin: 0;
     border-radius: 50%;
-    border: 2px solid #94aed2;
+    border: 2px solid #b0cfdf;
 }
 
 .profile-details {
@@ -89,7 +89,7 @@ header {
     font-size: 4vh;
     margin-bottom: 0.5rem;
     letter-spacing: 2px;
-    color: #94aed2;
+    color: #b0cfdf;
 }
 
 .contact {
@@ -98,7 +98,7 @@ header {
 }
 
 .contact a {
-    color: #94aed2;
+    color: #b0cfdf;
     text-decoration: none;
 }
 
@@ -130,7 +130,7 @@ section {
 
 section h2 {
     margin-bottom: 1.2rem;
-    color: #94aed2;
+    color: #b0cfdf;
     font-size: 3.5vh;
 }
 
@@ -264,7 +264,7 @@ nav,
 }
 
 .project .description h3 {
-    color: #94aed2;
+    color: #b0cfdf;
     margin-top: 5%;
     font-size: 1.6vw;
 }
@@ -280,7 +280,7 @@ nav,
 }
 
 .project a {
-    color: #94aed2;
+    color: #b0cfdf;
     display: inline-flex;
     flex-wrap: nowrap;
     margin: 0.8rem 0.8rem auto 0.1rem;
