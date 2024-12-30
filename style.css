@@ -464,6 +464,10 @@ footer {
 
 @media(max-width: 500px) {
 
+    nav {
+        gap: 45px;
+    }
+
     header {
         padding: 5rem 1rem 0;
     }
