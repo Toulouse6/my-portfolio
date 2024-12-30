@@ -50,7 +50,7 @@ nav a:hover {
 /* HEADER */
 
 header {
-    padding-top: 9rem;
+    padding-top: 7rem;
     border-bottom: 1px solid #E2E8F0;
     display: flex;
     flex-direction: column;
@@ -118,6 +118,7 @@ header {
 .projects-container {
     width: 100%;
     padding-top: 1rem;
+    min-height: 33vh;
 }
 
 /* SECTION */
@@ -232,7 +233,14 @@ nav,
     gap: 1rem;
 }
 
+.hidden {
+    display: none !important;
+    opacity: 0;
+    transform: scale(0.95);
+}
+
 .project {
+    transition: opacity 0.3s ease, transform 0.3s ease;
     padding: 4%;
     background: #15171D;
     background: linear-gradient(90deg, rgba(21, 23, 29, 1) 0%, rgba(24, 26, 38, 1) 70%);
@@ -313,7 +321,7 @@ footer {
 @media(max-width: 1300px) {
 
     header {
-        padding: 7.5rem 1.5rem 0;
+        padding: 6rem 1.5rem 0;
     }
 
     section {
@@ -365,7 +373,7 @@ footer {
 @media(max-width: 1024px) {
 
     header {
-        padding: 8rem 1.2rem 0;
+        padding: 6.5rem 1.2rem 0;
     }
 
     .profile-section {
@@ -420,6 +428,10 @@ footer {
 
 
 @media(max-width: 720px) {
+
+    header {
+        padding: 6rem 1.5rem 0;
+    }
 
     .tech-stack-header img,
     .tech-stack img {
@@ -528,10 +540,10 @@ footer {
     }
 
     .tech-stack-header-mobile {
-        margin: 1.5rem 0 0 0.5rem;
+        margin: 1.5rem 0 0;
         display: flex !important;
         flex-wrap: wrap;
-        justify-content: start;
+        justify-content: center;
         gap: 10px;
         width: 100%;
     }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tal Argaman | Full-Stack Developer</title>
-
+    <script src="./main.js"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -15,10 +15,10 @@
     <!-- Nav Menu -->
     <div>
         <nav>
-            <a href="#uveye">UVeye</a>
-            <a href="#zeex">Zeex</a>
-            <a href="#my">My Work</a>
-            <a href="#top">About</a>
+            <a href="#top" onclick="resetFilter()">About</a>
+            <a href="#uveye" onclick="resetFilter()">UVeye</a>
+            <a href="#zeex" onclick="resetFilter()">Zeex</a>
+            <a href="#my" onclick="resetFilter()">My Work</a>
         </nav>
     </div>
 
@@ -30,37 +30,56 @@
                 <img src="./assets/images/headshot.png" alt="Tal Argaman" class="headshot">
 
                 <div class="tech-stack-header-mobile">
-                    <img src="assets/logos/angular-logo.png" alt="Angular">
-                    <img src="assets/logos/react-logo.png" alt="React">
-                    <img src="assets/logos/nodejs-logo.png" alt="Node.js">
-                    <img src="assets/logos/mysql-logo.png" alt="MySQL">
+                    <img src="assets/logos/angular-logo.png" alt="Angular" data-tech="Angular"
+                        onclick="filterProjects('Angular')">
+                    <img src="assets/logos/react-logo.png" alt="React" data-tech="React"
+                        onclick="filterProjects('React')">
+                    <img src="assets/logos/nodejs-logo.png" alt="Node.js" data-tech="Node.js"
+                        onclick="filterProjects('Node.js')">
+                    <img src="assets/logos/mysql-logo.png" alt="MySQL" data-tech="MySQL"
+                        onclick="filterProjects('MySQL')">
 
-                    <img src="assets/logos/nest-logo.png" alt="NestJS">
-                    <img src="assets/logos/redux-logo.png" alt="Redux">
-                    <img src="assets/logos/rxjs-logo.png" alt="RxJS">
-                    <img src="assets/logos/canvas-logo.png" alt="Canvas">
+                    <img src="assets/logos/nest-logo.png" alt="NestJS" data-tech="NestJS"
+                        onclick="filterProjects('NestJS')">
+                    <img src="assets/logos/redux-logo.png" alt="Redux" data-tech="Redux"
+                        onclick="filterProjects('Redux')">
+                    <img src="assets/logos/rxjs-logo.png" alt="RxJS" data-tech="RxJS" onclick="filterProjects('RxJS')">
+                    <img src="assets/logos/canvas-logo.png" alt="Canvas" data-tech="Canvas"
+                        onclick="filterProjects('Canvas')">
 
-                    <img src="assets/logos/express-logo.png" alt="Express.js">
-                    <img src="assets/logos/restapi-logo.png" alt="REST API">
-                    <img src="assets/logos/socket-logo.png" alt="Socket.IO">
+                    <img src="assets/logos/express-logo.png" alt="Express.js" data-tech="Express.js"
+                        onclick="filterProjects('Express.js')">
+                    <img src="assets/logos/restapi-logo.png" alt="REST API" data-tech="REST API"
+                        onclick="filterProjects('REST API')">
+                    <img src="assets/logos/socket-logo.png" alt="Socket.IO" data-tech="Socket.IO"
+                        onclick="filterProjects('Socket.IO')">
 
-                    <img src="assets/logos/docker-logo.png" alt="Docker">
-                    <img src="assets/logos/postman-logo.png" alt="Postman">
+                    <img src="assets/logos/docker-logo.png" alt="Docker" data-tech="Docker"
+                        onclick="filterProjects('Docker')">
+                    <img src="assets/logos/postman-logo.png" alt="Postman" data-tech="Postman"
+                        onclick="filterProjects('Postman')">
 
-                    <img src="assets/logos/typescript-logo.png" alt="TypeScript">
-                    <img src="assets/logos/js-logo.png" alt="JavaScript">
-                    <img src="assets/logos/jquery-logo.png" alt="jQuery">
-                    <img src="assets/logos/html-logo.png" alt="HTML">
-                    <img src="assets/logos/css-logo.png" alt="CSS">
+                    <img src="assets/logos/typescript-logo.png" alt="TypeScript" data-tech="TypeScript"
+                        onclick="filterProjects('TypeScript')">
+                    <img src="assets/logos/js-logo.png" alt="JavaScript" data-tech="JavaScript"
+                        onclick="filterProjects('JavaScript')">
+                    <img src="assets/logos/jquery-logo.png" alt="jQuery" data-tech="jQuery"
+                        onclick="filterProjects('jQuery')">
+                    <img src="assets/logos/html-logo.png" alt="HTML" data-tech="HTML" onclick="filterProjects('HTML')">
+                    <img src="assets/logos/css-logo.png" alt="CSS" data-tech="CSS" onclick="filterProjects('CSS')">
 
-                    <img src="assets/logos/sql-logo.png" alt="SQL">
+                    <img src="assets/logos/sql-logo.png" alt="SQL" data-tech="SQL" onclick="filterProjects('SQL')">
 
-                    <img src="assets/logos/gpt-logo.png" alt="GPT">
-                    <img src="assets/logos/salesforce-logo.png" alt="Salesforce">
-                    <img src="assets/logos/wordpress-logo.png" alt="WordPress">
-                    <img src="assets/logos/hubspot-logo.png" alt="HubSpot">
+                    <img src="assets/logos/gpt-logo.png" alt="GPT" data-tech="GPT" onclick="filterProjects('GPT')">
+                    <img src="assets/logos/salesforce-logo.png" alt="Salesforce" data-tech="Salesforce"
+                        onclick="filterProjects('Salesforce')">
+                    <img src="assets/logos/wordpress-logo.png" alt="WordPress" data-tech="WordPress"
+                        onclick="filterProjects('WordPress')">
+                    <img src="assets/logos/hubspot-logo.png" alt="HubSpot" data-tech="HubSpot"
+                        onclick="filterProjects('HubSpot')">
                 </div>
             </div>
+
 
             <div class="profile-details">
                 <h1>Tal Argaman | Full-Stack Developer</h1>
@@ -76,40 +95,59 @@
 
                 <div class="tech-stack-header">
 
-                    <img src="assets/logos/angular-logo.png" alt="Angular">
-                    <img src="assets/logos/react-logo.png" alt="React">
-                    <img src="assets/logos/nodejs-logo.png" alt="Node.js">
-                    <img src="assets/logos/mysql-logo.png" alt="MySQL">
+                    <img src="assets/logos/angular-logo.png" alt="Angular" data-tech="Angular"
+                        onclick="filterProjects('Angular')">
+                    <img src="assets/logos/react-logo.png" alt="React" data-tech="React"
+                        onclick="filterProjects('React')">
+                    <img src="assets/logos/nodejs-logo.png" alt="Node.js" data-tech="Node.js"
+                        onclick="filterProjects('Node.js')">
+                    <img src="assets/logos/mysql-logo.png" alt="MySQL" data-tech="MySQL"
+                        onclick="filterProjects('MySQL')">
 
-                    <img src="assets/logos/nest-logo.png" alt="NestJS">
-                    <img src="assets/logos/redux-logo.png" alt="Redux">
-                    <img src="assets/logos/rxjs-logo.png" alt="RxJS">
-                    <img src="assets/logos/canvas-logo.png" alt="Canvas">
+                    <img src="assets/logos/nest-logo.png" alt="NestJS" data-tech="NestJS"
+                        onclick="filterProjects('NestJS')">
+                    <img src="assets/logos/redux-logo.png" alt="Redux" data-tech="Redux"
+                        onclick="filterProjects('Redux')">
+                    <img src="assets/logos/rxjs-logo.png" alt="RxJS" data-tech="RxJS" onclick="filterProjects('RxJS')">
+                    <img src="assets/logos/canvas-logo.png" alt="Canvas" data-tech="Canvas"
+                        onclick="filterProjects('Canvas')">
 
-                    <img src="assets/logos/express-logo.png" alt="Express.js">
-                    <img src="assets/logos/restapi-logo.png" alt="REST API">
-                    <img src="assets/logos/socket-logo.png" alt="Socket.IO">
+                    <img src="assets/logos/express-logo.png" alt="Express.js" data-tech="Express.js"
+                        onclick="filterProjects('Express.js')">
+                    <img src="assets/logos/restapi-logo.png" alt="REST API" data-tech="REST API"
+                        onclick="filterProjects('REST API')">
+                    <img src="assets/logos/socket-logo.png" alt="Socket.IO" data-tech="Socket.IO"
+                        onclick="filterProjects('Socket.IO')">
 
-                    <img src="assets/logos/docker-logo.png" alt="Docker">
-                    <img src="assets/logos/postman-logo.png" alt="Postman">
+                    <img src="assets/logos/docker-logo.png" alt="Docker" data-tech="Docker"
+                        onclick="filterProjects('Docker')">
+                    <img src="assets/logos/postman-logo.png" alt="Postman" data-tech="Postman"
+                        onclick="filterProjects('Postman')">
 
-                    <img src="assets/logos/typescript-logo.png" alt="TypeScript">
-                    <img src="assets/logos/js-logo.png" alt="JavaScript">
-                    <img src="assets/logos/jquery-logo.png" alt="jQuery">
-                    <img src="assets/logos/html-logo.png" alt="HTML">
-                    <img src="assets/logos/css-logo.png" alt="CSS">
+                    <img src="assets/logos/typescript-logo.png" alt="TypeScript" data-tech="TypeScript"
+                        onclick="filterProjects('TypeScript')">
+                    <img src="assets/logos/js-logo.png" alt="JavaScript" data-tech="JavaScript"
+                        onclick="filterProjects('JavaScript')">
+                    <img src="assets/logos/jquery-logo.png" alt="jQuery" data-tech="jQuery"
+                        onclick="filterProjects('jQuery')">
+                    <img src="assets/logos/html-logo.png" alt="HTML" data-tech="HTML" onclick="filterProjects('HTML')">
+                    <img src="assets/logos/css-logo.png" alt="CSS" data-tech="CSS" onclick="filterProjects('CSS')">
 
-                    <img src="assets/logos/sql-logo.png" alt="SQL">
+                    <img src="assets/logos/sql-logo.png" alt="SQL" data-tech="SQL" onclick="filterProjects('SQL')">
 
-                    <img src="assets/logos/gpt-logo.png" alt="GPT">
-                    <img src="assets/logos/salesforce-logo.png" alt="Salesforce">
-                    <img src="assets/logos/wordpress-logo.png" alt="WordPress">
-                    <img src="assets/logos/hubspot-logo.png" alt="HubSpot">
+                    <img src="assets/logos/gpt-logo.png" alt="GPT" data-tech="GPT" onclick="filterProjects('GPT')">
+                    <img src="assets/logos/salesforce-logo.png" alt="Salesforce" data-tech="Salesforce"
+                        onclick="filterProjects('Salesforce')">
+                    <img src="assets/logos/wordpress-logo.png" alt="WordPress" data-tech="WordPress"
+                        onclick="filterProjects('WordPress')">
+                    <img src="assets/logos/hubspot-logo.png" alt="HubSpot" data-tech="HubSpot"
+                        onclick="filterProjects('HubSpot')">
                 </div>
             </div>
 
         </div>
     </header>
+
 
     <!-- All Project -->
     <div class="projects-container">
@@ -127,8 +165,9 @@
             <!-- project-gallery -->
             <div class="project-gallery">
 
+
                 <!-- UVeye Platform -->
-                <div class="project">
+                <div class="project" data-techs="Angular Redux RxJS TypeScript Bootstrap HTML CSS">
                     <img class="screenshot" src="./assets/screenshots/uveye-platform.gif" alt="uveye-platform">
                     <div class="description">
                         <h3>The UVeye Platform</h3>
@@ -149,7 +188,7 @@
 
 
                 <!-- Calculator -->
-                <div class="project">
+                <div class="project" data-techs="JavaScript HTML CSS HubSpot">
                     <img class="screenshot" src="assets/screenshots/uveye-calculator.gif" alt="uveye-calculator">
                     <div class="description">
                         <h3>UVeye Calculator</h3>
@@ -166,8 +205,9 @@
                     <a href="" target="_blank">Repository</a>
                 </div>
 
+
                 <!-- Careers -->
-                <div class="project">
+                <div class="project" data-techs="JavaScript HTML CSS HubSpot">
                     <img class="screenshot" src="assets/screenshots/uveye-careers.gif" alt="uveye-careers">
                     <div class="description">
                         <h3>UVeye Careers</h3>
@@ -184,9 +224,10 @@
                     <a href="" target="_blank">Repository</a>
                 </div>
 
+
                 <!-- UVeye Website -->
-                <div class="project">
-                    <img class="screenshot" src="assets/screenshots/uveye-website.gif" alt="uveye-careers">
+                <div class="project" data-techs="JavaScript HTML CSS HubSpot Bootstrap">
+                    <img class="screenshot" src="assets/screenshots/uveye-website.gif" alt="uveye-website">
                     <div class="description">
                         <h3>The UVeye Website</h3>
                         <p>UVeye is an Automotive company specializing in automatic inspection.</p>
@@ -214,8 +255,9 @@
             <!-- project-gallery -->
             <div class="project-gallery">
 
-                <!-- Project -->
-                <div class="project">
+
+                <!-- Zeex Website -->
+                <div class="project" data-techs="JavaScript HTML CSS Bootstrap">
                     <img class="screenshot" src="./assets/screenshots/zeex-website.gif" alt="zeex-website">
                     <div class="description">
                         <h3>The Zeex.me Website</h3>
@@ -231,8 +273,9 @@
                     </div>
                 </div>
 
-                <!-- Project -->
-                <div class="project">
+
+                <!-- Zeex App -->
+                <div class="project" data-techs="JavaScript HTML CSS Bootstrap">
                     <img class="screenshot" src="./assets/screenshots/zeex-me-app.png" alt="zeex-app">
                     <div class="description">
                         <h3>The Zeex App</h3>
@@ -247,6 +290,8 @@
                         <a href="https://www.zeex.me/" target="_blank">Git Page</a>
                     </div>
                 </div>
+
+            </div>
         </section>
 
 
@@ -257,8 +302,10 @@
             <!-- project-gallery -->
             <div class="project-gallery">
 
+
                 <!-- Vacation Prov -->
-                <div class="project">
+                <div class="project"
+                    data-techs="React Node.js Express.js NestJS TypeScript Docker Bootstrap Canvas MySQL HTML CSS">
                     <img class="screenshot" src="./assets/screenshots/vacation-prov-screenshot.png" alt="vacation-prov">
                     <div class="description">
                         <h3>Vacation Provocation</h3>
@@ -282,8 +329,9 @@
                     </div>
                 </div>
 
+
                 <!-- Pokemon -->
-                <div class="project">
+                <div class="project" data-techs="Angular Redux RxJS TypeScript HTML CSS Bootstrap">
                     <img class="screenshot" src="assets/screenshots/evolution-lab-screen.png"
                         alt="pokemon-evolution-lab">
                     <div class="description">
@@ -303,8 +351,9 @@
                     </div>
                 </div>
 
+
                 <!-- Exodia -->
-                <div class="project">
+                <div class="project" data-techs="Angular RxJS TypeScript HTML CSS Bootstrap">
                     <img class="screenshot" src="assets/screenshots/exo-screen.gif" alt="exodia-legacy">
                     <div class="description">
                         <h3>Exodia Legacy</h3>
@@ -322,8 +371,9 @@
                     </div>
                 </div>
 
+
                 <!-- CryptoLand -->
-                <div class="project">
+                <div class="project" data-techs="JavaScript HTML CSS Bootstrap REST API">
                     <img class="screenshot" src="assets/screenshots/cryptoland.png" alt="cryptoland">
                     <div class="description">
                         <h3>Cryptoland</h3>
@@ -340,8 +390,9 @@
                     </div>
                 </div>
 
+
                 <!-- Lucky Note Deck -->
-                <div class="project">
+                <div class="project" data-techs="JavaScript HTML CSS">
                     <img class="screenshot" src="assets/screenshots/lucky-note-deck.png" alt="lucky-note-deck">
                     <div class="description">
                         <h3>Lucky Note Deck</h3>
@@ -365,27 +416,6 @@
     <footer>
         <p>&copy; All rights reserved to Tal Argaman | 2025</p>
     </footer>
-
-
-
-    <!-- Script -->
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener("click", function (e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute("href"));
-                    if (target) {
-                        window.scrollTo({
-                            top: target.offsetTop - 70,
-                            behavior: "smooth"
-                        });
-                    }
-                });
-            });
-        });
-    </script>
-
 
 </body>
 
