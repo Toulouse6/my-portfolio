@@ -164,7 +164,6 @@ nav,
     font-size: 1.2vw;
 }
 
-
 /* STACK ICONS */
 
 .tech-stack-header {
@@ -324,7 +323,7 @@ footer {
     margin: 4rem auto 0;
     color: white;
     background-color: #495769;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
 }
 
 
