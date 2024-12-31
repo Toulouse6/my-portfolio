@@ -143,7 +143,7 @@ section {
 }
 
 section h2 {
-    margin-bottom: 1.2rem;
+    margin: 1rem auto;
     color: #b0cfdf;
     font-size: 3.5vh;
 }
@@ -589,6 +589,7 @@ footer {
     }
 
     section h2 {
+        margin-bottom: 1rem;
         font-size: 2.5vh;
         width: 100%;
     }
