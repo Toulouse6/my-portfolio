@@ -13,7 +13,6 @@
 }
 
 
-
 html,
 body {
     max-width: 100%;
@@ -214,26 +213,6 @@ nav,
     filter: grayscale(0%);
     filter: brightness(1.5);
 }
-
-.tech-stack-header img:hover::after,
-.tech-stack img:hover::after {
-    content: attr(alt);
-    position: absolute;
-    bottom: 120%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 5px 8px;
-    border-radius: 5px;
-    white-space: nowrap;
-    font-size: 12px;
-    z-index: 10;
-    pointer-events: none;
-    visibility: visible;
-    opacity: 1;
-}
-
 
 /* PROJECT */
 

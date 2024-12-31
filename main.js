@@ -122,5 +122,23 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+
+    // Entrance effects:
+    document.addEventListener("DOMContentLoaded", () => {
+        const elements = document.querySelectorAll(".hidden");
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        elements.forEach((el) => observer.observe(el));
+    });
+
 });
 
