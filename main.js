@@ -21,7 +21,6 @@ function filterProjects(selectedTech) {
     const projects = document.querySelectorAll(".project");
     const sections = document.querySelectorAll("section:not(#filtered-section)");
     const sectionTitles = document.querySelectorAll("section h2");
-    const sectionDescriptions = document.querySelectorAll("section .section-des");
     const techIcons = document.querySelectorAll(".tech-stack-header img, .tech-stack-header-mobile img");
     let filteredSection = document.querySelector("#filtered-section");
 
@@ -62,7 +61,6 @@ function filterProjects(selectedTech) {
     // Hide all original sections and titles/descriptions
     sections.forEach(section => section.classList.add("hidden"));
     sectionTitles.forEach(title => title.classList.add("hidden"));
-    sectionDescriptions.forEach(desc => desc.classList.add("hidden"));
 
     // Show filtered section
     filteredSection.classList.remove("hidden");
@@ -71,8 +69,7 @@ function filterProjects(selectedTech) {
     if (!anyVisible) {
         const noResults = document.createElement("p");
         noResults.textContent = "Yet to be uploaded";
-        noResults.style.color = "#b0cfdf";
-        noResults.style.textAlign = "center";
+        noResults.style.color = "white";
         noResults.style.marginTop = "20px";
         projectGallery.appendChild(noResults);
     }
@@ -82,7 +79,6 @@ function resetFilter() {
     const projects = document.querySelectorAll(".project");
     const sections = document.querySelectorAll("section:not(#filtered-section)");
     const sectionTitles = document.querySelectorAll("section h2");
-    const sectionDescriptions = document.querySelectorAll("section .section-des");
     const techIcons = document.querySelectorAll(".tech-stack-header img, .tech-stack-header-mobile img");
     const filteredSection = document.querySelector("#filtered-section");
 
@@ -104,7 +100,6 @@ function resetFilter() {
     // Restore all sections and titles/descriptions
     sections.forEach(section => section.classList.remove("hidden"));
     sectionTitles.forEach(title => title.classList.remove("hidden"));
-    sectionDescriptions.forEach(desc => desc.classList.remove("hidden"));
 
     // Remove the filtered section if exists
     if (filteredSection) {

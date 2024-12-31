@@ -90,7 +90,9 @@ header {
     font-size: 4vh;
     margin-bottom: 0.5rem;
     letter-spacing: 2px;
+    line-height: 1.5;
     color: #b0cfdf;
+    width: 120%;
 }
 
 .contact {
@@ -107,11 +109,6 @@ header {
     color: white;
 }
 
-.my-des {
-    color: white;
-    margin-top: 0.8rem;
-    line-height: 1.6;
-}
 
 /* PROJECTS CONTAINER*/
 
@@ -125,10 +122,10 @@ header {
 /* SECTION */
 
 .active-tech {
-    border: 2px solid #b0cfdf;
-    border-radius: 50%;
+    filter: grayscale(0%);
     filter: brightness(1.5);
 }
+
 #filtered-section {
     margin-top: 2rem;
 }
@@ -152,24 +149,19 @@ section h2 {
     font-size: 3.5vh;
 }
 
-
-.my-des,
-.section-des {
-    font-size: 1.1vw;
+.contact,
+.my-des {
+    font-size: 1.2vw;
     width: 100%;
     color: white;
     margin: 0.5rem 0 1.5rem;
     line-height: 1.6;
 }
 
-.section-des {
-    margin-bottom: 0;
-}
-
 footer,
 nav,
 .project p {
-    font-size: 1.1vw;
+    font-size: 1.2vw;
 }
 
 
@@ -183,8 +175,9 @@ nav,
     gap: 0.8rem;
     margin-bottom: 1.5rem;
     padding: 0;
-    width: 60%;
-    align-items: flex-start;
+    width: 70%;
+    margin-top: 2rem;
+    align-items: center;
 }
 
 .tech-stack-header-mobile {
@@ -198,7 +191,7 @@ nav,
     flex-wrap: wrap;
     justify-content: start;
     gap: 0.3rem;
-    margin-top: 0.5rem;
+    margin-top: 0.8rem;
     padding: 0;
     align-items: flex-start;
 }
@@ -214,11 +207,13 @@ nav,
     border: none;
     position: relative;
     z-index: 1;
+    filter: grayscale(40%);
 }
 
 .tech-stack-header img:hover,
 .tech-stack img:hover {
-    filter: brightness(1.2);
+    filter: grayscale(0%);
+    filter: brightness(1.5);
 }
 
 .tech-stack-header img:hover::after,
@@ -349,15 +344,16 @@ footer {
         width: 85%;
     }
 
-    .my-des,
-    .section-des {
-        font-size: 1.4vw;
+    .contact,
+    .my-des {
+        font-size: 1.5vw;
     }
 
     footer,
     nav,
     .project p {
-        font-size: 1.4vw;
+        font-size: 1.5vw;
+        line-height: 1.5;
     }
 
     .project a {
@@ -366,24 +362,29 @@ footer {
     }
 
     .project span {
-        font-size: 1.1vw;
+        font-size: 1.2vw;
     }
 
+    .contact,
     .my-des {
-        padding-top: 1rem;
+        padding-top: 0.2rem;
     }
 
     .profile-details h1 {
+        width: 100%;
         font-size: 2.8vw;
     }
 
     .tech-stack-header {
+        margin-top: 2rem;
+        align-items: center;
         gap: 0.7rem;
-        width: 70%;
+        width: 75%;
     }
 
     .tech-stack-header img,
     .tech-stack img {
+        margin-top: 0.5rem;
         height: 2.5vw !important;
         width: 2.5vw !important;
     }
@@ -409,10 +410,10 @@ footer {
 
     footer,
     nav,
+    .contact,
     .my-des,
-    .project p,
-    .section-des {
-        font-size: 1.8vw;
+    .project p {
+        font-size: 1.6vw;
     }
 
     .project .description h3 {
@@ -430,12 +431,14 @@ footer {
 
     .tech-stack-header img,
     .tech-stack img {
-        height: 2.5vw !important;
-        width: 2.5vw !important;
+        height: 2.2vw !important;
+        width: 2.2vw !important;
     }
 
     .tech-stack-header {
-        width: 60%;
+        align-items: center;
+        margin-top: 2rem;
+        width: 80%;
     }
 
 }
@@ -449,14 +452,29 @@ footer {
     }
 
     .tech-stack-header {
-        width: 70%;
+        margin-top: 2rem;
+        width: 100%;
     }
 
 
-    .tech-stack-header img,
+    .tech-stack-header img {
+        height: 4vw !important;
+        width: 4vw !important;
+    }
+
     .tech-stack img {
-        height: 3vw !important;
-        width: 3vw !important;
+        height: 2vw !important;
+        width: 2vw !important;
+    }
+
+    footer,
+    .project p,
+    .my-des {
+        font-size: 1.8vw;
+    }
+
+    .project span {
+        font-size: 1.4vw;
     }
 
 }
@@ -468,24 +486,41 @@ footer {
         padding: 6rem 1.5rem 0;
     }
 
-   
+    .headshot {
+        margin-top: -1rem;
+    }
+
+
     .tech-stack-header {
         display: none;
     }
 
     .tech-stack-header-mobile {
-        margin: 1rem 0 0;
+        align-items: center;
+        margin: 1.5rem 0 0;
         display: flex !important;
         flex-wrap: wrap;
         justify-content: center;
         gap: 8px;
-        width: 100%;
+        width: 100%
     }
 
     .tech-stack-header-mobile img {
-        height: 3vw;
-        width: 3vw;
+        height: 3.2vw;
+        width: 3.2vw;
         object-fit: contain;
+        filter: grayscale(40%);
+    }
+
+    .tech-stack-header-mobile img:hover {
+        filter: grayscale(0%);
+        filter: brightness(1.5);
+    }
+
+    .tech-stack img {
+        margin-top: 0.5rem;
+        height: 4vw !important;
+        width: 4vw !important;
     }
 
     .profile-section {
@@ -511,18 +546,32 @@ footer {
     }
 
     .project .description h3 {
+        font-size: 2.5vw;
+    }
+
+    .project .tech-stack img {
+        height: 3.5vw;
+        width: 3.5vw;
+    }
+
+    .project .description h3 {
         font-size: 3vw;
     }
 
     footer,
     .project p,
-    .my-des,
-    .section-des {
-        font-size: 2.5vw;
+    .contact {
+        font-size: 2.2vw;
     }
 
     .my-des {
-        padding-top: 0.5rem;
+        line-height: 2;
+        font-size: 2.3vw;
+    }
+
+    .contact,
+    .my-des {
+        padding-top: 0.2rem;
     }
 
     nav,
@@ -547,7 +596,7 @@ footer {
         font-size: 4vw;
         letter-spacing: 4px;
         width: 100%;
-        line-height: 1.6;
+        line-height: 1.5;
         margin: 0.5rem 0;
     }
 
@@ -571,12 +620,20 @@ footer {
         width: 100%;
     }
 
-    .headshot {
-        margin-top: 2rem;
+    .project h3 {
+        font-size: 4vw !important;
     }
 
-    .my-des,
-    .section-des {
+    .project p {
+        font-size: 3.5vw !important;
+    }
+
+    .headshot {
+        margin-top: 1rem;
+    }
+
+    .contact,
+    .my-des {
         font-size: 3.5vw;
     }
 
@@ -585,7 +642,7 @@ footer {
     }
 
     .tech-stack-header-mobile {
-        margin: 1.5rem 0 0;
+        margin: 3rem 0.5;
         display: flex !important;
         flex-wrap: wrap;
         justify-content: center;
@@ -594,9 +651,14 @@ footer {
     }
 
     .tech-stack-header-mobile img {
-        height: 4.5vw;
-        width: 4.5vw;
+        height: 5vw;
+        width: 5vw;
         object-fit: contain;
+    }
+
+    .tech-stack img {
+        height: 5.5vw !important;
+        width: 5.5vw !important;
     }
 
     header p {
@@ -604,7 +666,12 @@ footer {
     }
 
     .project span {
-        font-size: 4vw;
+        font-size: 2.5vw;
+    }
+
+    .profile-details p,
+    .project .description h3 {
+        font-size: 3vw;
     }
 
     .project a {
