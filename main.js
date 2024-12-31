@@ -1,5 +1,5 @@
 let activeTech = null; // Track selected stack
-const originalSectionMap = new Map(); // Map to store original sections
+const originalSectionMap = new Map(); // Map to store original parent section
 
 
 document.addEventListener("DOMContentLoaded", () => {
