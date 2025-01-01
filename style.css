@@ -178,6 +178,18 @@ nav,
 
 /* STACK ICONS */
 
+
+
+.select-tech {
+    font-size: 1.2vw;
+    font-weight: 500;
+    color: white;
+}
+
+.select-tech-mobile {
+    display: none;
+}
+
 .tech-stack-header {
     display: flex;
     overflow-x: auto;
@@ -187,7 +199,7 @@ nav,
     margin-bottom: 1.5rem;
     padding: 0;
     width: 70%;
-    margin-top: 2rem;
+    margin-top: 0.8rem;
     align-items: center;
 }
 
@@ -371,6 +383,7 @@ footer {
         width: 85%;
     }
 
+    .select-tech,
     .contact,
     .my-des {
         font-size: 1.5vw;
@@ -403,7 +416,6 @@ footer {
     }
 
     .tech-stack-header {
-        margin-top: 2rem;
         align-items: center;
         gap: 0.7rem;
         width: 75%;
@@ -415,7 +427,6 @@ footer {
         height: 2.5vw !important;
         width: 2.5vw !important;
     }
-
 
 }
 
@@ -437,6 +448,7 @@ footer {
 
     footer,
     nav,
+    .select-tech,
     .contact,
     .my-des,
     .project p {
@@ -463,8 +475,8 @@ footer {
     }
 
     .tech-stack-header {
+        margin-top: 0.5rem;
         align-items: center;
-        margin-top: 2rem;
         width: 80%;
     }
 
@@ -479,7 +491,6 @@ footer {
     }
 
     .tech-stack-header {
-        margin-top: 2rem;
         width: 100%;
     }
 
@@ -513,10 +524,13 @@ footer {
         padding: 6rem 1.5rem 0;
     }
 
+    .profile-details h1 {
+        font-size: 3.8vw;
+    }
+
     .headshot {
         margin-top: -1rem;
     }
-
 
     .tech-stack-header {
         display: none;
@@ -524,10 +538,10 @@ footer {
 
     .tech-stack-header-mobile {
         align-items: center;
-        margin: 1.5rem 0 0;
+        margin-left: 0.2rem;
         display: flex !important;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: left;
         gap: 8px;
         width: 100%
     }
@@ -548,6 +562,27 @@ footer {
         margin-top: 0.5rem;
         height: 4vw !important;
         width: 4vw !important;
+    }
+
+    .select-tech {
+        display: none;
+    }
+
+    .select-tech-mobile {
+        display: block;
+        margin: 0.5rem 0 0.8rem 0.2rem;
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: white;
+    }
+
+    .project .tech-stack img {
+        height: 3.5vw;
+        width: 3.5vw;
+    }
+
+    .project .description h3 {
+        font-size: 3vw;
     }
 
     .profile-section {
@@ -574,15 +609,6 @@ footer {
 
     .project .description h3 {
         font-size: 2.5vw;
-    }
-
-    .project .tech-stack img {
-        height: 3.5vw;
-        width: 3.5vw;
-    }
-
-    .project .description h3 {
-        font-size: 3vw;
     }
 
     footer,
@@ -661,8 +687,20 @@ footer {
     }
 
     .contact,
+    .select-tech,
     .my-des {
         font-size: 3.5vw;
+    }
+
+    .select-tech-mobile {
+        display: block;
+        margin: 0.8rem 0 1rem 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .tech-stack-header-mobile {
+        align-items: center;
+        margin-left: 0.2rem;
     }
 
     .tech-stack-header {
@@ -710,6 +748,20 @@ footer {
 
     footer {
         margin-top: 0;
+    }
+
+    @media(max-width: 430px) {
+
+        .select-tech-mobile {
+            margin: 1rem 0 1rem 0.3rem;
+            font-size: 0.8rem;
+        }
+
+        .tech-stack-header-mobile img {
+            height: 5.1vw;
+            width: 5.1vw;
+        }
+
     }
 
 
