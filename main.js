@@ -1,3 +1,11 @@
+// Fade-in page
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.body.style.opacity = "1";
+});
+
+
+
 let activeTech = null; // Track selected stack
 const originalSectionMap = new Map(); // Map to store original parent section
 
