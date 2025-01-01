@@ -611,7 +611,7 @@ footer {
     nav,
     .project p,
     .contact {
-        font-size: 2.1vw;
+        font-size: 2.2vw;
     }
 
     .my-des {
@@ -636,6 +636,7 @@ footer {
 
     nav {
         gap: 45px;
+        font-size: 2.8vw;
     }
 
     header {
