@@ -15,13 +15,11 @@
     }
 }
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 html,
 body {
@@ -31,17 +29,18 @@ body {
     background: #162131;
     overflow-x: hidden;
     margin: 0 auto;
+
     /* Fade in */
     opacity: 0;
     animation: fadeInPage 1s ease-in-out forwards;
 }
 
-/* NAVIGATION MENU */
+/* NAV MENU */
 
 nav {
     display: flex;
     justify-content: center;
-    gap: 3rem;
+    gap: 6rem;
     padding: 1rem 0 1rem;
     width: 100%;
     position: fixed;
@@ -72,6 +71,7 @@ header {
     background: #21334b;
 }
 
+/* About */
 .profile-section {
     display: flex;
     align-items: center;
@@ -107,6 +107,15 @@ header {
     width: 120%;
 }
 
+.contact,
+.my-des {
+    font-size: 1.2vw;
+    width: 100%;
+    color: white;
+    margin: 0.5rem 0 1.5rem;
+    line-height: 1.6;
+}
+
 .contact {
     color: white;
     margin-bottom: 0.5rem;
@@ -121,9 +130,7 @@ header {
     color: white;
 }
 
-
 /* PROJECTS CONTAINER*/
-
 
 .projects-container {
     width: 100%;
@@ -131,59 +138,17 @@ header {
     min-height: 33vh;
 }
 
-/* SECTION */
+/* STACK ICONS */
 
 .active-tech {
     filter: grayscale(0%);
     filter: brightness(1.5);
 }
 
-#filtered-section {
-    margin-top: 2rem;
-}
-
-.project-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
-}
-
-
-section {
-    max-width: 70%;
-    padding: 0.5rem 2rem;
-    margin: 2rem auto;
-}
-
-section h2 {
-    margin: 1rem auto;
-    color: #b0cfdf;
-    font-size: 3.5vh;
-}
-
-.contact,
-.my-des {
-    font-size: 1.2vw;
-    width: 100%;
-    color: white;
-    margin: 0.5rem 0 1.5rem;
-    line-height: 1.6;
-}
-
-footer,
-nav,
-.project p {
-    font-size: 1.2vw;
-}
-
-/* STACK ICONS */
-
-
-
 .select-tech {
     font-size: 1.2vw;
     font-weight: 500;
-    color: white;
+    color: #b0cfdf;
 }
 
 .select-tech-mobile {
@@ -219,7 +184,6 @@ nav,
     align-items: flex-start;
 }
 
-
 .tech-stack-header img,
 .tech-stack img {
     height: 2.2vw !important;
@@ -237,6 +201,36 @@ nav,
 .tech-stack img:hover {
     filter: grayscale(0%);
     filter: brightness(1.5);
+}
+
+/* SECTION */
+
+#filtered-section {
+    margin-top: 2rem;
+}
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+section {
+    max-width: 70%;
+    padding: 0.5rem 2rem;
+    margin: 2rem auto;
+}
+
+section h2 {
+    margin: 1rem auto;
+    color: #b0cfdf;
+    font-size: 3.5vh;
+}
+
+footer,
+nav,
+.project p {
+    font-size: 1.2vw;
 }
 
 /* PROJECT */
@@ -302,20 +296,6 @@ nav,
     }
 }
 
-/* IMAGE */
-
-.screenshot {
-    width: 100%;
-    height: 22vh;
-    border-radius: 15px;
-    border: 1px solid #b0cfdf;
-    display: block;
-    image-resolution: 100%;
-    margin: 0 auto;
-    object-fit: cover;
-    object-position: top center;
-}
-
 .project .description {
     text-align: left;
     padding: 0.2rem;
@@ -350,6 +330,18 @@ nav,
     color: white;
 }
 
+/* Image */
+.screenshot {
+    width: 100%;
+    height: 22vh;
+    border-radius: 15px;
+    border: 1px solid #b0cfdf;
+    display: block;
+    image-resolution: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+    object-position: top center;
+}
 
 /* FOOTER */
 
@@ -366,8 +358,7 @@ footer {
     letter-spacing: 1px;
 }
 
-
-/* Responsive */
+/* 1300px Screen */
 
 @media(max-width: 1300px) {
 
@@ -430,7 +421,7 @@ footer {
 
 }
 
-
+/* 1024px Screen */
 @media(max-width: 1024px) {
 
     header {
@@ -482,18 +473,16 @@ footer {
 
 }
 
-
+/* 940px Screen */
 @media(max-width: 940px) {
 
-    .screenshot {
-        width: 100%;
-        height: 14vh;
+    nav {
+        gap: 5rem;
     }
 
     .tech-stack-header {
         width: 100%;
     }
-
 
     .tech-stack-header img {
         height: 4vw !important;
@@ -504,6 +493,12 @@ footer {
         height: 2vw !important;
         width: 2vw !important;
     }
+
+    .screenshot {
+        width: 100%;
+        height: 14vh;
+    }
+
 
     footer,
     .project p,
@@ -517,7 +512,7 @@ footer {
 
 }
 
-
+/* 720px Screen */
 @media(max-width: 720px) {
 
     header {
@@ -573,7 +568,7 @@ footer {
         margin: 0.5rem 0 0.8rem 0.2rem;
         font-size: 0.8rem;
         font-weight: 500;
-        color: white;
+        color: #b0cfdf;
     }
 
     .project .tech-stack img {
@@ -612,9 +607,10 @@ footer {
     }
 
     footer,
+    nav,
     .project p,
     .contact {
-        font-size: 2.2vw;
+        font-size: 2.1vw;
     }
 
     .my-des {
@@ -627,14 +623,13 @@ footer {
         padding-top: 0.2rem;
     }
 
-    nav,
     header p {
         font-size: 2.8vw;
     }
 
 }
 
-
+/* 500px Screen */
 @media(max-width: 500px) {
 
     nav {
@@ -770,7 +765,6 @@ footer {
             height: 5.1vw;
             width: 5.1vw;
         }
-
     }
 
 
