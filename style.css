@@ -418,6 +418,12 @@ footer {
         width: 2.5vw !important;
     }
 
+
+    .screenshot {
+        width: 100%;
+        height: 20vh;
+    }
+
 }
 
 
@@ -471,11 +477,16 @@ footer {
         width: 80%;
     }
 
+    .screenshot {
+        width: 100%;
+        height: 18vh;
+    }
+
 }
 
 
 /* Responsive 940px */
-@media(max-width: 940px) {
+@media(max-width: 980px) {
 
     nav {
         gap: 5rem;
@@ -497,7 +508,7 @@ footer {
 
     .screenshot {
         width: 100%;
-        height: 14vh;
+        height: 12vh;
     }
 
     footer,
