@@ -16,15 +16,14 @@
     <!-- Nav Menu -->
     <div>
         <nav>
-            <a href="#top" onclick="resetFilter()">About</a>
-            <a href="#my" onclick="resetFilter()">My Work</a>
-            <a href="#uveye" onclick="resetFilter()">UVeye</a>
-            <a href="#zeex" onclick="resetFilter()">Zeex</a>
+            <a href="#about" onclick="resetFilter()">About</a>
+            <a href="#apps" onclick="resetFilter()">Applications</a>
+            <a href="#websites" onclick="resetFilter()">Websites</a>
         </nav>
     </div>
 
     <!-- Header -->
-    <header id="top">
+    <header id="about">
 
         <div class="profile-section">
             <div>
@@ -175,12 +174,74 @@
         <!-- Filtered Projects Section -->
         <section id="filtered-section" class="hidden"></section>
 
-        <!-- My Work -->
-        <section id="my">
-            <h2>My Work</h2>
+        <!-- Applications -->
+        <section id="apps">
+            <h2>Web Applications</h2>
 
-            <!--  My Work project-gallery -->
+            <!-- applications project-gallery -->
             <div class="project-gallery">
+
+
+                <!-- UVeye Platform -->
+                <div class="project" data-techs="Angular RxJS TypeScript Bootstrap HTML CSS">
+                    <img class="screenshot" src="./assets/screenshots/uveye-platform.gif" alt="uveye-platform">
+                    <div class="description">
+                        <h3>The UVeye Platform</h3>
+                        <p>Automated vehicle inspection platform overview.</p>
+                        <span>© All rights reserved to UVeye inc. 2024</span>
+                    </div>
+                    <div class="tech-stack">
+                        <img src="assets/logos/angular-logo.png" alt="Angular">
+                        <img src="assets/logos/rxjs-logo.png" alt="RxJS">
+                        <img src="assets/logos/typescript-logo.png" alt="TypeScript">
+                        <img src="assets/logos/bootstrap-logo.png" alt="Bootstrap">
+                        <img src="assets/logos/html-logo.png" alt="HTML">
+                        <img src="assets/logos/css-logo.png" alt="CSS">
+                    </div>
+                    <a href="https://github.com/Toulouse6/uveye-platform/" target="_blank">Repository</a>
+                </div>
+
+
+                <!-- Calculator -->
+                <div class="project" data-techs="JavaScript HTML CSS HubSpot Salesforce">
+                    <img class="screenshot" src="assets/screenshots/uveye-calculator.gif" alt="uveye-calculator">
+                    <div class="description">
+                        <h3>UVeye Calculator</h3>
+                        <p>UVeye's ROI Calculator for Car Dealerships.</p>
+                        <span>© All rights reserved to UVeye inc. 2024</span>
+                    </div>
+                    <div class="tech-stack">
+                        <img src="assets/logos/js-logo.png" alt="JavaScript">
+                        <img src="assets/logos/html-logo.png" alt="HTML">
+                        <img src="assets/logos/css-logo.png" alt="CSS">
+                        <img src="assets/logos/hubspot-logo.png" alt="HubSpot">
+                        <img src="assets/logos/salesforce-logo.png" alt="Salesforce">
+                    </div>
+                    <a href="https://toulouse6.github.io/oem-calculator/" target="_blank">Git Page</a>
+                    <a href="https://github.com/Toulouse6/oem-calculator/" target="_blank">Repository</a>
+                </div>
+
+
+                <!-- Careers -->
+                <div class="project" data-techs="RESTful API jQuery HTML CSS HubSpot">
+                    <img class="screenshot" src="assets/screenshots/uveye-careers.gif" alt="uveye-careers">
+                    <div class="description">
+                        <h3>UVeye Careers</h3>
+                        <p>UVeye's career page, integrating job listings and applicant tools.</p>
+                        <span>© All rights reserved to UVeye inc. 2024</span>
+                    </div>
+                    <div class="tech-stack">
+                        <img src="assets/logos/restapi-logo.png" alt="RestfulAPI">
+                        <img src="assets/logos/js-logo.png" alt="JavaScript">
+                        <img src="assets/logos/jquery-logo.png" alt="jQuery">
+                        <img src="assets/logos/html-logo.png" alt="HTML">
+                        <img src="assets/logos/css-logo.png" alt="CSS">
+                        <img src="assets/logos/hubspot-logo.png" alt="HubSpot">
+                    </div>
+                    <a href="https://toulouse6.github.io/uveye-careers/" target="_blank">Git Page</a>
+                    <a href="https://github.com/Toulouse6/uveye-careers/" target="_blank">Repository</a>
+                </div>
+
 
                 <!-- Vacation Prov -->
                 <div class="project"
@@ -207,7 +268,8 @@
                         </div>
                         <a href="https://toulouse6.github.io/vacation-prov-frontend/" target="_blank">Git Page</a>
                         <a href="https://github.com/Toulouse6/vacation-prov-frontend/" target="_blank">Frontend Rep</a>
-                        <a href="https://github.com/Toulouse6/vacation-provocation-full-stack/" target="_blank">Full-Stack Rep</a>
+                        <a href="https://github.com/Toulouse6/vacation-provocation-full-stack/"
+                            target="_blank">Full-Stack Rep</a>
                     </div>
                 </div>
 
@@ -288,76 +350,31 @@
                     </div>
                 </div>
 
-            </div>
+                <!-- Zeex App -->
+                <div class="project" data-techs="JavaScript HTML CSS Bootstrap">
+                    <img class="screenshot" src="./assets/screenshots/zeex-me-app.png" alt="zeex-app">
+                    <div class="description">
+                        <h3>The Zeex App</h3>
+                        <p>The Zeex App allows its users to spend their cryptocurrencies online & offline.</p>
+                        <span>© All rights reserved to Zeex 2018</span>
+                        <div class="tech-stack">
+                            <img src="assets/logos/js-logo.png" alt="JavaScript">
+                            <img src="assets/logos/html-logo.png" alt="HTML">
+                            <img src="assets/logos/css-logo.png" alt="CSS">
+                            <img src="assets/logos/bootstrap-logo.png" alt="Bootstrap">
+                        </div>
+                    </div>
+
+                </div>
         </section>
 
 
-        <!-- UVeye -->
-        <section id="uveye">
-            <h2>UVeye Projects</h2>
-            <!-- UVeye project-gallery -->
+        <!-- Websites -->
+        <section id="websites">
+            <h2>Websites Projects</h2>
+
+            <!-- websites-gallery -->
             <div class="project-gallery">
-
-
-                <!-- UVeye Platform -->
-                <div class="project" data-techs="Angular RxJS TypeScript Bootstrap HTML CSS">
-                    <img class="screenshot" src="./assets/screenshots/uveye-platform.gif" alt="uveye-platform">
-                    <div class="description">
-                        <h3>The UVeye Platform</h3>
-                        <p>Automated vehicle inspection platform overview.</p>
-                        <span>© All rights reserved to UVeye inc. 2024</span>
-                    </div>
-                    <div class="tech-stack">
-                        <img src="assets/logos/angular-logo.png" alt="Angular">
-                        <img src="assets/logos/rxjs-logo.png" alt="RxJS">
-                        <img src="assets/logos/typescript-logo.png" alt="TypeScript">
-                        <img src="assets/logos/bootstrap-logo.png" alt="Bootstrap">
-                        <img src="assets/logos/html-logo.png" alt="HTML">
-                        <img src="assets/logos/css-logo.png" alt="CSS">
-                    </div>
-                    <a href="https://github.com/Toulouse6/uveye-platform/" target="_blank">Repository</a>
-                </div>
-
-
-                <!-- Calculator -->
-                <div class="project" data-techs="JavaScript HTML CSS HubSpot Salesforce">
-                    <img class="screenshot" src="assets/screenshots/uveye-calculator.gif" alt="uveye-calculator">
-                    <div class="description">
-                        <h3>UVeye Calculator</h3>
-                        <p>UVeye's ROI Calculator for Car Dealerships.</p>
-                        <span>© All rights reserved to UVeye inc. 2024</span>
-                    </div>
-                    <div class="tech-stack">
-                        <img src="assets/logos/js-logo.png" alt="JavaScript">
-                        <img src="assets/logos/html-logo.png" alt="HTML">
-                        <img src="assets/logos/css-logo.png" alt="CSS">
-                        <img src="assets/logos/hubspot-logo.png" alt="HubSpot">
-                        <img src="assets/logos/salesforce-logo.png" alt="Salesforce">
-                    </div>
-                    <a href="https://toulouse6.github.io/oem-calculator/" target="_blank">Git Page</a>
-                    <a href="https://github.com/Toulouse6/oem-calculator/" target="_blank">Repository</a>
-                </div>
-
-
-                <!-- Careers -->
-                <div class="project" data-techs="RESTful API jQuery HTML CSS HubSpot">
-                    <img class="screenshot" src="assets/screenshots/uveye-careers.gif" alt="uveye-careers">
-                    <div class="description">
-                        <h3>UVeye Careers</h3>
-                        <p>UVeye's career page, integrating job listings and applicant tools.</p>
-                        <span>© All rights reserved to UVeye inc. 2024</span>
-                    </div>
-                    <div class="tech-stack">
-                        <img src="assets/logos/restapi-logo.png" alt="RestfulAPI">
-                        <img src="assets/logos/js-logo.png" alt="JavaScript">
-                        <img src="assets/logos/jquery-logo.png" alt="jQuery">
-                        <img src="assets/logos/html-logo.png" alt="HTML">
-                        <img src="assets/logos/css-logo.png" alt="CSS">
-                        <img src="assets/logos/hubspot-logo.png" alt="HubSpot">
-                    </div>
-                    <a href="https://toulouse6.github.io/uveye-careers/" target="_blank">Git Page</a>
-                    <a href="https://github.com/Toulouse6/uveye-careers/" target="_blank">Repository</a>
-                </div>
 
 
                 <!-- UVeye Website -->
@@ -380,17 +397,6 @@
                     <a href="https://www.uveye.com/" target="_blank">Live page</a>
                 </div>
 
-            </div>
-        </section>
-
-
-        <!-- Zeex -->
-        <section id="zeex">
-            <h2>Zeex Projects</h2>
-
-            <!-- Zeex-gallery -->
-            <div class="project-gallery">
-
 
                 <!-- Zeex Website -->
                 <div class="project" data-techs="JavaScript HTML CSS Bootstrap WordPress">
@@ -410,22 +416,6 @@
                     </div>
                 </div>
 
-
-                <!-- Zeex App -->
-                <div class="project" data-techs="JavaScript HTML CSS Bootstrap">
-                    <img class="screenshot" src="./assets/screenshots/zeex-me-app.png" alt="zeex-app">
-                    <div class="description">
-                        <h3>The Zeex App</h3>
-                        <p>The Zeex App allows its users to spend their cryptocurrencies online & offline.</p>
-                        <span>© All rights reserved to Zeex 2018</span>
-                        <div class="tech-stack">
-                            <img src="assets/logos/js-logo.png" alt="JavaScript">
-                            <img src="assets/logos/html-logo.png" alt="HTML">
-                            <img src="assets/logos/css-logo.png" alt="CSS">
-                            <img src="assets/logos/bootstrap-logo.png" alt="Bootstrap">
-                        </div>
-                    </div>
-                </div>
 
             </div>
         </section>
