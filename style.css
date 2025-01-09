@@ -492,7 +492,7 @@ footer {
 
     .project a {
         margin-top: 0.5rem;
-        font-size: 1.4vw;
+        font-size: 1.1vw;
     }
 
     .tech-stack-header img,
@@ -515,7 +515,7 @@ footer {
 }
 
 
-/* Responsive 940px */
+/* Responsive 980px */
 @media(max-width: 980px) {
 
     nav {
@@ -547,6 +547,10 @@ footer {
         font-size: 1.8vw;
     }
 
+    .project a {
+        font-size: 1vw;
+    }
+
     .project span {
         font-size: 1.4vw;
     }
@@ -554,8 +558,8 @@ footer {
 }
 
 
-/* Responsive 720px */
-@media(max-width: 720px) {
+/* Responsive 768px */
+@media(max-width: 768px) {
 
     header {
         padding: 6rem 1.5rem 0;
@@ -781,7 +785,7 @@ footer {
 
     .project a {
         margin-top: 1rem 0 2rem;
-        font-size: 3vw;
+        font-size: 2.5vw;
         line-height: 1.8;
     }
 
@@ -811,6 +815,10 @@ footer {
     .tech-stack-header-mobile img {
         height: 5.1vw;
         width: 5.1vw;
+    }
+
+    .project a {
+        font-size: 2.3vw;
     }
 
 }
