@@ -335,10 +335,9 @@ nav,
     border-radius: 60px;
     transition: all 0.3s;
     line-height: 1.4em;
-    border: 2px solid var(--blue);
+    border: 1px solid var(--blue);
     background: linear-gradient(to right, rgba(176, 207, 223, 0.1) 1%, transparent 40%, transparent 60%, rgba(176, 207, 223, 0.1) 100%);
     color: var(--blue);
-    box-shadow: inset 0 0 10px rgba(176, 207, 223, 0.4), 0 0 9px 3px rgba(176, 207, 223, 0.1);
 }
 
 .project a:hover {
