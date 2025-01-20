@@ -360,6 +360,8 @@ nav,
     border-radius: 15px;
     border: 1px solid #b0cfdf;
     display: block;
+    object-fit: contain;
+    object-position: center; 
     image-resolution: 100%;
     margin: 0 auto;
     object-fit: cover;
