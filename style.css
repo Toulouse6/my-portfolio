@@ -317,7 +317,7 @@ nav,
     color: white;
 }
 
-.project a {
+.project .cta-link {
     display: inline-flex;
     flex-wrap: nowrap;
     margin: 0.1rem 0.1rem 0.5rem 0.1rem !important;
@@ -338,11 +338,11 @@ nav,
     color: var(--blue);
 }
 
-.project a:hover:before {
+.project .cta-link:hover:before {
     transform: translateX(15em);
 }
 
-.project a:before {
+.project .cta-link:before {
     content: "";
     position: absolute;
     left: -4em;
@@ -411,7 +411,7 @@ footer {
         line-height: 1.5;
     }
 
-    .project a {
+    .project .cta-link {
         margin-top: 0.8rem;
         font-size: 1.1vw;
     }
@@ -485,7 +485,7 @@ footer {
         font-size: 1.3vw;
     }
 
-    .project a {
+    .project .cta-link {
         margin-top: 0.5rem;
         font-size: 1.1vw;
     }
@@ -542,7 +542,7 @@ footer {
         font-size: 1.8vw;
     }
 
-    .project a {
+    .project .cta-link {
         font-size: 1vw;
     }
 
@@ -637,7 +637,7 @@ footer {
         font-size: 2vw;
     }
 
-    .project a {
+    .project .cta-link {
         margin-top: 0.5rem;
         font-size: 2vw;
     }
@@ -799,7 +799,7 @@ footer {
         font-size: 3vw;
     }
 
-    .project a {
+    .project .cta-link {
         margin-top: 1rem 0 2rem;
         font-size: 2.5vw;
         line-height: 1.8;
@@ -837,7 +837,7 @@ footer {
         line-height: 1.7;
     }
 
-    .project a {
+    .project .cta-link {
         font-size: 2.3vw;
     }
 
