@@ -77,7 +77,7 @@ header {
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    width: 65%;
+    width: 75%;
     margin-bottom: 1rem;
 }
 
@@ -395,7 +395,7 @@ footer {
     }
 
     .profile-section {
-        width: 78%;
+        width: 85%;
     }
 
     .select-tech,
@@ -460,7 +460,7 @@ footer {
     }
 
     .profile-section {
-        width: 75%;
+        width: 90%;
     }
 
     .profile-details h1 {
