@@ -45,6 +45,7 @@ nav {
     width: 100%;
     position: fixed;
     background-color: #131c23;
+    border-bottom: 1px solid #1d2a36;
     z-index: 2;
 }
 
@@ -478,6 +479,7 @@ footer {
     margin: 4rem auto 0;
     color: white;
     background-color: #131c23;
+    border-top: 1px solid #1d2a36;
     letter-spacing: 1px;
 }
 
