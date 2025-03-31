@@ -725,8 +725,8 @@ footer {
         font-size: 3vw;
     }
 
-    .profile-section {
-        width: 95%;
+    section {
+        max-width: 95%;
     }
 
     .screenshot {
