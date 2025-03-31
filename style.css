@@ -170,7 +170,7 @@ header,
     gap: 0.8rem;
     margin-bottom: 1.5rem;
     padding: 0;
-    width: 65%;
+    width: 70%;
     margin-top: 0.8rem;
     align-items: center;
 }
@@ -569,7 +569,7 @@ footer {
     .tech-stack-header {
         margin-top: 0.5rem;
         align-items: center;
-        width: 80%;
+        width: 85%;
     }
 
     .screenshot {
@@ -588,7 +588,7 @@ footer {
     }
 
     .tech-stack-header {
-        width: 100%;
+        width: 80%;
     }
 
     .tech-stack-header img {
@@ -653,7 +653,7 @@ footer {
         align-items: center;
         margin: 0;
         gap: 5px;
-        width: 100%;
+        width: 80%;
     }
 
     .tech-stack-header-mobile img {
