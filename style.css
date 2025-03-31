@@ -774,11 +774,6 @@ footer {
 /* Responsive 730px */
 @media(max-width: 700px) {
 
-    .project-gallery {
-        grid-template-columns: 1fr;
-        width: 100%;
-    }
-
     .profile-details h1 {
         margin-top: 1rem;
     }
@@ -786,6 +781,11 @@ footer {
     .screenshot {
         height: 11rem;
 
+    }
+ 
+    .project-gallery {
+        grid-template-columns: 1fr;
+        width: 100%;
     }
 
 }
