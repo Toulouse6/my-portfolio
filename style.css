@@ -45,7 +45,7 @@ nav {
     width: 100%;
     position: fixed;
     background-color: #131c23;
-    border-bottom: 1px solid #1d2a36;
+    border-bottom: 2px solid #1d2a36;
     z-index: 2;
 }
 
@@ -65,7 +65,7 @@ nav a:hover {
 header {
     position: relative;
     padding-top: 7rem;
-    border-bottom: 1px solid #1d2a36;
+    border-bottom: 2px solid #1d2a36;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -334,7 +334,7 @@ nav,
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    border: 1px solid #1d2a36;
+    border: 2px solid #1d2a36;
 
     /* Fade-in*/
     opacity: 0;
@@ -477,7 +477,7 @@ footer {
     margin: 4rem auto 0;
     color: white;
     background-color: #131c23;
-    border-top: 1px solid #1d2a36;
+    border-top: 2px solid #1d2a36;
     letter-spacing: 1px;
 }
 
