@@ -155,7 +155,8 @@ header {
 
 .tech-stack-header {
     display: flex;
-    overflow-x: auto;
+    overflow: visible;
+    position: relative;
     flex-wrap: wrap;
     justify-content: start;
     gap: 0.8rem;
@@ -205,6 +206,7 @@ header {
 
 .tech-icon {
     position: relative;
+    overflow: visible;
     display: inline-block;
     margin: 6px;
 }
@@ -234,6 +236,8 @@ header {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.25s ease, transform 0.25s ease;
+
+    z-index: 9999; 
 }
 
 .tech-icon:hover .tooltip {
