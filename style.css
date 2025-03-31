@@ -222,8 +222,8 @@ header,
 
 .tech-stack-header img,
 .tech-stack img {
-    height: 2.2vw !important;
-    width: 2.2vw !important;
+    height: 1.5vw !important;
+    width: 1.5vw !important;
     display: flex;
     object-fit: contain;
     transition: filter 0.3s ease;
@@ -542,8 +542,8 @@ footer {
     .tech-stack-header img,
     .tech-stack img {
         margin-top: 0.5rem;
-        height: 3vw !important;
-        width: 3vw !important;
+        height: 2.5vw !important;
+        width: 2.5vw !important;
     }
 
 
@@ -589,12 +589,6 @@ footer {
     .project .cta-link {
         margin-top: 0.5rem;
         font-size: 1.1vw;
-    }
-
-    .tech-stack-header img,
-    .tech-stack img {
-        height: 2.8vw !important;
-        width: 2.8vw !important;
     }
 
     .tech-stack-header {
@@ -698,12 +692,6 @@ footer {
         filter: grayscale(0%) brightness(1.5);
     }
 
-    .tech-stack img {
-        margin-top: 0.5rem;
-        height: 4vw !important;
-        width: 4vw !important;
-    }
-
     .select-tech {
         display: none;
     }
@@ -717,8 +705,8 @@ footer {
     }
 
     .project .tech-stack img {
-        height: 3.5vw;
-        width: 3.5vw;
+        height: 3vw;
+        width: 3vw;
     }
 
     .project .description h3 {
@@ -787,7 +775,13 @@ footer {
         grid-template-columns: 1fr;
         width: 100%;
     }
-     
+
+    .tech-stack img {
+        margin-top: 0.5rem;
+        height: 3.5vw !important;
+        width: 3.5vw !important;
+    }
+    
     .project .cta-link {
         font-size: 2.3vw;
     }
@@ -877,8 +871,8 @@ footer {
     }
 
     .tech-stack img {
-        height: 5.5vw !important;
-        width: 5.5vw !important;
+        height: 5vw !important;
+        width: 5vw !important;
     }
 
     header p {
