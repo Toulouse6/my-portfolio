@@ -170,7 +170,7 @@ header,
     gap: 0.8rem;
     margin-bottom: 1.5rem;
     padding: 0;
-    width: 75%;
+    width: 80%;
     margin-top: 0.8rem;
     align-items: center;
 }
@@ -194,8 +194,8 @@ header,
 
 .tech-stack-header img,
 .tech-stack img {
-    height: 1.7vw !important;
-    width: 1.7vw !important;
+    height: 2.2vw !important;
+    width: 2.2vw !important;
     display: flex;
     object-fit: contain;
     transition: filter 0.3s ease;
@@ -505,14 +505,14 @@ footer {
     .tech-stack-header {
         align-items: center;
         gap: 0.7rem;
-        width: 80%;
+        width: 85%;
     }
 
     .tech-stack-header img,
     .tech-stack img {
         margin-top: 0.5rem;
-        height: 2.8vw !important;
-        width: 2.8vw !important;
+        height: 3vw !important;
+        width: 3vw !important;
     }
 
 
@@ -562,14 +562,14 @@ footer {
 
     .tech-stack-header img,
     .tech-stack img {
-        height: 2.2vw !important;
-        width: 2.2vw !important;
+        height: 2.8vw !important;
+        width: 2.8vw !important;
     }
 
     .tech-stack-header {
         margin-top: 0.5rem;
         align-items: center;
-        width: 80%;
+        width: 85%;
     }
 
     .screenshot {
