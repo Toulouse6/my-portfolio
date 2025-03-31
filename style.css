@@ -652,7 +652,7 @@ footer {
         justify-content: flex-start;
         align-items: center;
         margin: 0;
-        gap: 10px;
+        gap: 5px;
         width: 100%;
     }
 
@@ -753,7 +753,7 @@ footer {
 @media(max-width: 700px) {
 
     .profile-details h1 {
-        margin-top: 1.5rem;
+        margin-top: 1rem;
     }
 
     .screenshot {
@@ -765,10 +765,6 @@ footer {
 
 /* Responsive 640px */
 @media(max-width: 640px) {
-
-    .profile-details h1 {
-        margin-top: 2rem;
-    }
 
 
     .screenshot {
@@ -841,7 +837,7 @@ footer {
         justify-content: flex-start;
         align-items: center;
         margin: 0;
-        gap: 10px;
+        gap: 5px;
         width: 100%;
     }
 
@@ -933,7 +929,6 @@ footer {
 @media(max-width: 390px) {
 
     .profile-details h1 {
-        margin-top: 0.5rem;
         font-size: 3.5vw;
     }
 
