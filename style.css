@@ -221,16 +221,16 @@ header {
 
 .tooltip {
     position: absolute;
-    bottom: 125%;
+    bottom: 110%;
     left: 50%;
     transform: translateX(-50%) translateY(4px);
     background-color: #222;
     color: #fff;
     padding: 4px 10px;
     border-radius: 4px;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     white-space: nowrap;
-    z-index: 10;
+    z-index: 999;
     pointer-events: none;
     opacity: 0;
     visibility: hidden;
@@ -239,7 +239,7 @@ header {
 
 .tech-icon:hover .tooltip {
     visibility: visible;
-    opacity: 1;
+    opacity: 0.8;
     transform: translateX(-50%) translateY(-4px);
 }
 
@@ -380,7 +380,9 @@ nav,
     border-radius: 60px;
     border: 1px solid var(--blue);
     transition: all 0.3s;
+
     --blue: #b0cfdf;
+
     background: linear-gradient(to right,
             rgba(176, 207, 223, 0.1) 1%,
             transparent 40%,
