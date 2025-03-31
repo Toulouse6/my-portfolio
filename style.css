@@ -791,8 +791,8 @@ footer {
     }
 
     .profile-details h1 {
-        font-size: 4vw;
-        letter-spacing: 4px;
+        font-size: 3.8vw;
+        letter-spacing: 3px;
         width: 100%;
         line-height: 1.5;
         margin-top: 1.8rem;
@@ -934,6 +934,7 @@ footer {
 
     .profile-details h1 {
         margin-top: 0.5rem;
+        font-size: 3.5vw;
     }
 
     .screenshot {
