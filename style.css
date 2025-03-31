@@ -138,6 +138,44 @@ header {
 
 /* STACK ICONS */
 
+.tech-icon {
+    position: relative;
+    display: inline-block;
+    margin: 6px;
+}
+
+.tech-icon img {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.tech-icon img:hover {
+    transform: scale(1.1);
+}
+
+.tooltip {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #222;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 10;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.tech-icon:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(-4px);
+}
+
 .active-tech {
     filter: grayscale(0%) brightness(1.5);
 }
