@@ -380,10 +380,7 @@ nav,
     border-radius: 60px;
     border: 1px solid var(--blue);
     transition: all 0.3s;
-
     --blue: #b0cfdf;
-    --azure: #d3e6f0;
-
     background: linear-gradient(to right,
             rgba(176, 207, 223, 0.1) 1%,
             transparent 40%,
