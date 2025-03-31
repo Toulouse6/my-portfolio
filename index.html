@@ -14,248 +14,42 @@
 <body>
 
     <!-- Nav Menu -->
-    <div>
-        <nav>
-            <a href="#about" onclick="resetFilter()">About</a>
-            <a href="#projects" onclick="resetFilter()">All Projects</a>
-        </nav>
-    </div>
+    <nav>
+        <a href="#about" onclick="resetFilter()">About</a>
+        <a href="#projects" onclick="resetFilter()">All Projects</a>
+    </nav>
 
     <!-- Header -->
     <header id="about">
-
         <div class="profile-section">
-            <div>
+            <img src="./assets/images/headshot.png" alt="Tal Argaman" class="headshot">
 
-                <!-- Headhsot -->
-                <img src="./assets/images/headshot.png" alt="Tal Argaman" class="headshot">
+            <div class="profile-details">
+                <h1 class="profile-name">Tal Argaman</h1>
+                <h2 class="profile-title">Full-Stack Developer</h2>
 
-                <!-- Stack Icons Mobile -->
-                <span class="select-tech-mobile">Sort by tech:</span>
-                <div class="tech-stack-header-mobile">
-                    <div class="tech-icon">
-                        <img src="assets/logos/angular-logo.png" alt="Angular" data-tech="Angular"
-                            onclick="filterProjects('Angular')">
-                        <span class="tooltip">Angular</span>
-                    </div>
-                    <div class="tech-icon">
-                        <img src="assets/logos/react-logo.png" alt="React" data-tech="React"
-                            onclick="filterProjects('React')">
-                        <span class="tooltip">React</span>
-                    </div>
-                    <div class="tech-icon">
-                        <img src="assets/logos/nodejs-logo.png" alt="Node.js" data-tech="Node.js"
-                            onclick="filterProjects('Node.js')">
-                        <span class="tooltip">Node.js</span>
-                    </div>
-                    <div class="tech-icon">
-                        <img src="assets/logos/rxjs-logo.png" alt="RxJS" data-tech="RxJS"
-                            onclick="filterProjects('RxJS')">
-                        <span class="tooltip">RxJS</span>
-                    </div>
-                    <div class="tech-icon">
-                        <img src="assets/logos/nest-logo.png" alt="Nest" data-tech="Nest"
-                            onclick="filterProjects('Nest')">
-                        <span class="tooltip">Nest</span>
-                    </div>
-                    <div class="tech-icon">
-                        <img src="assets/logos/canvas-logo.png" alt="Canvas" data-tech="Canvas"
-                            onclick="filterProjects('Canvas')">
-                        <span class="tooltip">Canvas</span>
-                    </div>
-                    <div class="tech-icon">
-                        <img src="assets/logos/redux-logo.png" alt="Redux" data-tech="Redux"
-                            onclick="filterProjects('Redux')">
-                        <span class="tooltip">Redux</span>
-                    </div>
-                    <div class="tech-icon">
-                        <img src="assets/logos/express-logo.png" alt="Express" data-tech="Express"
-                            onclick="filterProjects('Express')">
-                        <span class="tooltip">Express</span>
-                    </div>
-                    <div class="tech-icon">
-                        <img src="assets/logos/restapi-logo.png" alt="RESTful API" data-tech="RESTful API"
-                            onclick="filterProjects('RESTful API')">
-                        <span class="tooltip">RESTful API</span>
-                    </div>
-                    <div class="tech-icon">
-                        <img src="assets/logos/ang-material.png" alt="Angular Material" data-tech="Angular Material"
-                            onclick="filterProjects('Angular Material')">
-                        <span class="tooltip">Angular Material</span>
-                    </div>
-                    <div class="tech-icon">
-                        <img src="assets/logos/docker-logo.png" alt="Docker" data-tech="Docker"
-                            onclick="filterProjects('Docker')">
-                        <span class="tooltip">Docker</span>
-                    </div>
-                    <div class="tech-icon">
-                        <img src="assets/logos/typescript-logo.png" alt="TypeScript" data-tech="TypeScript"
-                            onclick="filterProjects('TypeScript')">
-                        <span class="tooltip">TypeScript</span>
-                    </div>
-                    <div class="tech-icon">
-                        <img src="assets/logos/js-logo.png" alt="JavaScript" data-tech="JavaScript"
-                            onclick="filterProjects('JavaScript')">
-                        <span class="tooltip">JavaScript</span>
-                    </div>
-                    <div class="tech-icon">
-                        <img src="assets/logos/jquery-logo.png" alt="jQuery" data-tech="jQuery"
-                            onclick="filterProjects('jQuery')">
-                        <span class="tooltip">jQuery</span>
-                    </div>
-                    <div class="tech-icon">
-                        <img src="assets/logos/html-logo.png" alt="HTML" data-tech="HTML"
-                            onclick="filterProjects('HTML')">
-                        <span class="tooltip">HTML</span>
-                    </div>
-                    <div class="tech-icon">
-                        <img src="assets/logos/css-logo.png" alt="CSS" data-tech="CSS" onclick="filterProjects('CSS')">
-                        <span class="tooltip">CSS</span>
-                    </div>
-                    <div class="tech-icon">
-                        <img src="assets/logos/sql-logo.png" alt="SQL" data-tech="SQL"
-                            onclick="filterProjects('MySQL')">
-                        <span class="tooltip">SQL</span>
-                    </div>
-                    <div class="tech-icon">
-                        <img src="assets/logos/postman-logo.png" alt="Postman" data-tech="Postman"
-                            onclick="filterProjects('Postman')">
-                        <span class="tooltip">Postman</span>
-                    </div>
-                    <div class="tech-icon">
-                        <img src="assets/logos/hubspot-logo.png" alt="HubSpot" data-tech="HubSpot"
-                            onclick="filterProjects('HubSpot')">
-                        <span class="tooltip">HubSpot</span>
-                    </div>
-                    <div class="tech-icon">
-                        <img src="assets/logos/wordpress-logo.png" alt="WordPress" data-tech="WordPress"
-                            onclick="filterProjects('WordPress')">
-                        <span class="tooltip">WordPress</span>
-                    </div>
+                <p class="contact">
+                    +972-54-660-8628 |
+                    <a href="mailto:tal.argamanbib@gmail.com">tal.argamanbib@gmail.com</a> |
+                    <a href="https://github.com/Toulouse6" target="_blank" rel="noopener noreferrer">GitHub</a> |
+                    <a href="https://www.linkedin.com/in/tal-argaman-aharoni-05bb07122/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </p>
+
+                <p class="my-des">
+                    Full-Stack Developer with a strong marketing background and over 9 years of experience leading digital projects. Passionate about building and optimizing web applications.
+                </p>
+
+                <div class="stack-section">
+                    <span class="select-tech">Sort by tech:</span>
+                    <div class="tech-stack-header"><!-- [desktop stack icons inserted here by JS or server-side] --></div>
                 </div>
 
-                <!-- About -->
-                <div class="profile-details">
-                    <h1>Tal Argaman | Full-Stack Developer</h1>
-                    <p class="contact">+972-54-660-8628 | <a
-                            href="mailto:tal.argamanbib@gmail.com">tal.argamanbib@gmail.com</a> |
-                        <a href="https://github.com/Toulouse6">GitHub</a> |
-                        <a href="https://www.linkedin.com/in/tal-argaman-aharoni-05bb07122/">LinkedIn</a>
-                    </p>
-                    <p class="my-des">
-                        A Full-Stack Developer with an extensive marketing background and over 9 years of experience
-                        leading
-                        digital projects, eager to leverage my hands-on expertise in building and optimizing web
-                        applications in my next challenge.
-                    </p>
-
-                    <!-- Stack Icons Desktop -->
-                    <span class="select-tech">Sort by tech:</span>
-                    <div class="tech-stack-header">
-
-                        <div class="tech-icon">
-                            <img src="assets/logos/angular-logo.png" alt="Angular" data-tech="Angular"
-                                onclick="filterProjects('Angular')">
-                            <span class="tooltip">Angular</span>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="assets/logos/react-logo.png" alt="React" data-tech="React"
-                                onclick="filterProjects('React')">
-                            <span class="tooltip">React</span>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="assets/logos/nodejs-logo.png" alt="Node.js" data-tech="Node.js"
-                                onclick="filterProjects('Node.js')">
-                            <span class="tooltip">Node.js</span>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="assets/logos/rxjs-logo.png" alt="RxJS" data-tech="RxJS"
-                                onclick="filterProjects('RxJS')">
-                            <span class="tooltip">RxJS</span>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="assets/logos/nest-logo.png" alt="Nest" data-tech="Nest"
-                                onclick="filterProjects('Nest')">
-                            <span class="tooltip">Nest</span>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="assets/logos/canvas-logo.png" alt="Canvas" data-tech="Canvas"
-                                onclick="filterProjects('Canvas')">
-                            <span class="tooltip">Canvas</span>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="assets/logos/redux-logo.png" alt="Redux" data-tech="Redux"
-                                onclick="filterProjects('Redux')">
-                            <span class="tooltip">Redux</span>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="assets/logos/express-logo.png" alt="Express" data-tech="Express"
-                                onclick="filterProjects('Express')">
-                            <span class="tooltip">Express</span>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="assets/logos/restapi-logo.png" alt="RESTful API" data-tech="RESTful API"
-                                onclick="filterProjects('RESTful API')">
-                            <span class="tooltip">RESTful API</span>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="assets/logos/ang-material.png" alt="Angular Material" data-tech="Angular Material"
-                                onclick="filterProjects('Angular Material')">
-                            <span class="tooltip">Angular Material</span>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="assets/logos/docker-logo.png" alt="Docker" data-tech="Docker"
-                                onclick="filterProjects('Docker')">
-                            <span class="tooltip">Docker</span>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="assets/logos/typescript-logo.png" alt="TypeScript" data-tech="TypeScript"
-                                onclick="filterProjects('TypeScript')">
-                            <span class="tooltip">TypeScript</span>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="assets/logos/js-logo.png" alt="JavaScript" data-tech="JavaScript"
-                                onclick="filterProjects('JavaScript')">
-                            <span class="tooltip">JavaScript</span>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="assets/logos/jquery-logo.png" alt="jQuery" data-tech="jQuery"
-                                onclick="filterProjects('jQuery')">
-                            <span class="tooltip">jQuery</span>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="assets/logos/html-logo.png" alt="HTML" data-tech="HTML"
-                                onclick="filterProjects('HTML')">
-                            <span class="tooltip">HTML</span>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="assets/logos/css-logo.png" alt="CSS" data-tech="CSS"
-                                onclick="filterProjects('CSS')">
-                            <span class="tooltip">CSS</span>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="assets/logos/sql-logo.png" alt="SQL" data-tech="SQL"
-                                onclick="filterProjects('MySQL')">
-                            <span class="tooltip">SQL</span>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="assets/logos/postman-logo.png" alt="Postman" data-tech="Postman"
-                                onclick="filterProjects('Postman')">
-                            <span class="tooltip">Postman</span>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="assets/logos/hubspot-logo.png" alt="HubSpot" data-tech="HubSpot"
-                                onclick="filterProjects('HubSpot')">
-                            <span class="tooltip">HubSpot</span>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="assets/logos/wordpress-logo.png" alt="WordPress" data-tech="WordPress"
-                                onclick="filterProjects('WordPress')">
-                            <span class="tooltip">WordPress</span>
-                        </div>
-                    </div>
+                <div class="stack-section-mobile">
+                    <span class="select-tech-mobile">Sort by tech:</span>
+                    <div class="tech-stack-header-mobile"><!-- [mobile stack icons inserted here by JS or server-side] --></div>
                 </div>
             </div>
+        </div>
     </header>
 
 
