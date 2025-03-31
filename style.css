@@ -114,7 +114,7 @@ header,
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    width: 70%;
+    width: 75%;
     margin-bottom: 1rem;
 }
 
@@ -198,7 +198,7 @@ header,
     gap: 0.8rem;
     margin-bottom: 1.5rem;
     padding: 0;
-    width: 80%;
+    width: 85%;
     margin-top: 0.8rem;
     align-items: center;
 }
@@ -288,7 +288,7 @@ header,
 }
 
 section {
-    max-width: 70%;
+    max-width: 75%;
     padding: 0.5rem 2rem;
     margin: 0 auto 3rem auto;
 }
