@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Mona Sans Regular';
+    font-family: 'Mona Sans Regular', sans-serif;
     src: url('assets/fonts/MonaSans-Regular.ttf') format('truetype');
     font-display: swap;
     font-weight: 600;
@@ -32,6 +32,7 @@ body {
     /* Fade in */
     opacity: 0;
     animation: fadeInPage 1s ease-in-out forwards;
+    scroll-behavior: smooth;
 }
 
 /* NAV MENU */
@@ -138,44 +139,6 @@ header {
 
 /* STACK ICONS */
 
-.tech-icon {
-    position: relative;
-    display: inline-block;
-    margin: 6px;
-}
-
-.tech-icon img {
-    cursor: pointer;
-    transition: transform 0.2s ease;
-}
-
-.tech-icon img:hover {
-    transform: scale(1.1);
-}
-
-.tooltip {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    bottom: 120%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #222;
-    color: #fff;
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-size: 12px;
-    white-space: nowrap;
-    z-index: 10;
-    transition: opacity 0.2s ease, transform 0.2s ease;
-}
-
-.tech-icon:hover .tooltip {
-    visibility: visible;
-    opacity: 1;
-    transform: translateX(-50%) translateY(-4px);
-}
-
 .active-tech {
     filter: grayscale(0%) brightness(1.5);
 }
@@ -238,6 +201,48 @@ header {
     filter: grayscale(0%) brightness(1.5);
 }
 
+/* STACK TOOLTIPS */
+
+.tech-icon {
+    position: relative;
+    display: inline-block;
+    margin: 6px;
+}
+
+.tech-icon img {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    display: block;
+}
+
+.tech-icon:hover img {
+    transform: scale(1.1);
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%) translateY(4px);
+    background-color: #222;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    z-index: 10;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.tech-icon:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(-4px);
+}
+
 /* SECTION */
 
 #filtered-section {
@@ -275,7 +280,6 @@ nav,
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
-    grid-template-columns: repeat(2, 1fr);
 }
 
 
@@ -298,6 +302,11 @@ nav,
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInProject 0.8s ease-in-out forwards;
+}
+
+.project:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(211, 230, 240, 0.15);
 }
 
 .project:nth-child(1) {
@@ -414,8 +423,6 @@ nav,
     border-radius: 15px;
     border: 2px solid #1d2a36;
     display: block;
-    object-fit: cover;
-    object-position: center;
     image-resolution: 100%;
     margin: 0 auto;
     object-fit: cover;
@@ -820,23 +827,19 @@ footer {
         font-size: 0.8rem;
     }
 
-    .tech-stack-header-mobile {
-        align-items: center;
-        margin-left: 0.2rem;
-    }
-
     .tech-stack-header {
         display: none;
     }
 
     .tech-stack-header-mobile {
-        margin: 3rem 0.5;
         display: flex !important;
         flex-wrap: wrap;
-        justify-content: left;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 3rem 0.5rem;
+        padding-left: 9px;
         gap: 10px;
         width: 100%;
-        padding-left: 9px;
     }
 
     .tech-stack-header-mobile img {
@@ -868,7 +871,7 @@ footer {
     }
 
     .project .cta-link {
-        margin-top: 1rem 0 2rem;
+        margin: 1rem 0 2rem 0;
         font-size: 2.2vw;
         line-height: 1.8;
     }
