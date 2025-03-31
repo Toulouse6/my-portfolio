@@ -195,7 +195,7 @@ header,
     position: relative;
     flex-wrap: wrap;
     justify-content: start;
-    gap: 0.5rem;
+    gap: 1rem;
     margin-bottom: 1.5rem;
     padding: 0;
     width: 85%;
@@ -252,7 +252,7 @@ header,
     position: relative;
     overflow: visible;
     display: inline-block;
-    margin: 6px;
+    margin: 0;
 }
 
 .tech-icon img {
@@ -543,7 +543,7 @@ footer {
 
     .tech-stack-header {
         align-items: center;
-        gap: 0.5rem;
+        gap: 0.8rem;
         width: 85%;
     }
 
@@ -693,7 +693,7 @@ footer {
         justify-content: flex-start;
         align-items: center;
         margin-bottom: 1.2rem;
-        gap: 5px;
+        gap: 15px;
         width: 90%;
     }
 
@@ -876,7 +876,7 @@ footer {
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: center;
-        gap: 5px;
+        gap: 10px;
         width: 100%;
     }
 
