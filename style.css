@@ -774,6 +774,10 @@ footer {
 /* Responsive 730px */
 @media(max-width: 700px) {
 
+    .profile-section {
+        width: 95%;
+    }
+    
     .profile-details h1 {
         margin-top: 1rem;
     }
