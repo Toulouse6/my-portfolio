@@ -636,13 +636,14 @@ footer {
     }
 
     .tech-stack-header-mobile {
-        align-items: center;
-        margin-left: 0.2rem;
         display: flex !important;
         flex-wrap: wrap;
-        justify-content: left;
-        gap: 8px;
-        width: 100%
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 9px;
+        margin: 3rem 0.5rem;
+        gap: 10px;
+        width: 100%;
     }
 
     .tech-stack-header-mobile img {
