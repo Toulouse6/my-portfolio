@@ -651,7 +651,7 @@ footer {
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: center;
-        margin: 0;
+        margin-bottom: 1.2rem;
         gap: 5px;
         width: 90%;
     }
@@ -836,7 +836,6 @@ footer {
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: center;
-        margin: 0;
         gap: 5px;
         width: 100%;
     }
