@@ -467,7 +467,7 @@ footer {
     }
 
     .profile-section {
-        width: 85%;
+        width: 80%;
     }
 
     .select-tech,
@@ -754,7 +754,7 @@ footer {
 @media(max-width: 700px) {
 
     .profile-details h1 {
-        margin-top: 1rem;
+        margin-top: 1.5rem;
     }
 
     .screenshot {
@@ -768,7 +768,7 @@ footer {
 @media(max-width: 640px) {
 
     .profile-details h1 {
-        margin-top: 2.8rem;
+        margin-top: 2rem;
     }
 
 
@@ -796,12 +796,7 @@ footer {
         letter-spacing: 4px;
         width: 100%;
         line-height: 1.5;
-        margin-top: 2.2rem;
-    }
-
-    .profile-section {
-        width: 100%;
-        align-items: start;
+        margin-top: 1.8rem;
     }
 
     section {
@@ -835,7 +830,7 @@ footer {
 
     .select-tech-mobile {
         display: block;
-        margin: 0.8rem 0 -2rem 0.8rem;
+        margin: 0.8rem 0 0 0.8rem;
         font-size: 0.8rem;
     }
 
@@ -934,7 +929,7 @@ footer {
     }
 
     .profile-details h1 {
-        margin-top: 1.3rem;
+        margin-top: 1rem;
     }
 
 }
@@ -942,7 +937,7 @@ footer {
 @media(max-width: 390px) {
 
     .profile-details h1 {
-        margin-top: 0.3rem;
+        margin-top: 0.5rem;
     }
 
     .tech-stack-header-mobile {
