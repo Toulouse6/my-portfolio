@@ -698,8 +698,8 @@ footer {
     }
 
     .tech-stack-header-mobile img {
-        height: 3.5vw;
-        width: 3.5vw;
+        height: 4vw;
+        width: 4vw;
         object-fit: contain;
         filter: grayscale(40%);
     }
@@ -881,8 +881,8 @@ footer {
     }
 
     .tech-stack-header-mobile img {
-        height: 5vw;
-        width: 5vw;
+        height: 6vw;
+        width: 6vw;
         object-fit: contain;
     }
 
