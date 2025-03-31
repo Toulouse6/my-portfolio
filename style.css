@@ -44,7 +44,7 @@ nav {
     padding: 1rem 0 1rem;
     width: 100%;
     position: fixed;
-    background-color: #1d2a36;
+    background-color: #131c23;
     z-index: 2;
 }
 
@@ -477,7 +477,7 @@ footer {
     justify-content: center;
     margin: 4rem auto 0;
     color: white;
-    background-color: #1d2a36;
+    background-color: #131c23;
     letter-spacing: 1px;
 }
 
