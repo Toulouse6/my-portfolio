@@ -222,8 +222,6 @@ header,
 
 .tech-stack-header img,
 .tech-stack img {
-    height: 1.5vw !important;
-    width: 1.5vw !important;
     display: flex;
     object-fit: contain;
     transition: filter 0.3s ease;
@@ -231,6 +229,16 @@ header,
     position: relative;
     z-index: 1;
     filter: grayscale(40%);
+}
+
+.tech-stack-header img {
+    height: 2.2vw !important;
+    width: 2.2vw !important;
+}
+
+.tech-stack img {
+    height: 1.5vw !important;
+    width: 1.5vw !important;
 }
 
 .tech-stack-header img:hover,
@@ -539,14 +547,18 @@ footer {
         width: 85%;
     }
 
-    .tech-stack-header img,
-    .tech-stack img {
+    .tech-stack-header img {
         margin-top: 0.5rem;
         height: 2.5vw !important;
         width: 2.5vw !important;
     }
 
-
+    .tech-stack img {
+        margin-top: 0.5rem;
+        height: 1.5vw !important;
+        width: 1.5vw !important;
+    }
+    
     .screenshot {
         width: 100%;
         height: 14rem;
