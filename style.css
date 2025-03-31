@@ -267,7 +267,7 @@ section {
 }
 
 section h2 {
-    margin: 1rem auto;
+    margin: 0.5rem 0 1.5rem 0;
     color: white;
     font-size: 3.5vh;
     font-weight: 400;
@@ -804,7 +804,6 @@ footer {
     }
 
     section h2 {
-        margin-bottom: 1rem;
         font-size: 2.5vh;
         width: 100%;
     }
