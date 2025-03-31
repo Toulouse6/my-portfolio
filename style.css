@@ -71,6 +71,14 @@ header {
     background-color: #131c23;
 }
 
+header,
+.profile-section,
+.tech-stack-header,
+.tech-icon {
+    position: relative;
+    z-index: auto;
+}
+
 /* About */
 .profile-section {
     display: flex;
@@ -237,7 +245,7 @@ header {
     visibility: hidden;
     transition: opacity 0.25s ease, transform 0.25s ease;
 
-    z-index: 9999; 
+    z-index: 9999;
 }
 
 .tech-icon:hover .tooltip {
