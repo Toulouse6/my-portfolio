@@ -272,7 +272,6 @@ header,
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.25s ease, transform 0.25s ease;
-
     z-index: 9999;
 }
 
@@ -318,10 +317,9 @@ nav,
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
-
 
 .hidden {
     display: none !important;
@@ -512,6 +510,10 @@ footer {
         line-height: 1.5;
     }
 
+    .project-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
     .project .cta-link {
         margin-top: 0.8rem;
         font-size: 1.1vw;
