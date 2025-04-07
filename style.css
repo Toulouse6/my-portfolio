@@ -464,7 +464,7 @@ nav,
 /* Image */
 .screenshot {
     width: 100%;
-    height: 15rem;
+    height: 10rem;
     border-radius: 15px;
     border: 2px solid #1d2a36;
     display: block;
@@ -561,9 +561,19 @@ footer {
     
     .screenshot {
         width: 100%;
-        height: 14rem;
+        height: 13rem;
     }
 }
+
+
+/* Responsive 1120px */
+@media(max-width: 1120px) {
+    
+    .screenshot {
+        height: 10rem;
+    }
+}
+
 
 /* Responsive 1024px */
 @media(max-width: 1024px) {
@@ -609,11 +619,6 @@ footer {
         width: 85%;
     }
 
-    .screenshot {
-        width: 100%;
-        height: 10rem;
-    }
-
 }
 
 
@@ -636,11 +641,6 @@ footer {
     .tech-stack img {
         height: 2.2vw !important;
         width: 2.2vw !important;
-    }
-
-    .screenshot {
-        width: 100%;
-        height: 9rem;
     }
 
     footer,
@@ -735,7 +735,7 @@ footer {
 
     .screenshot {
         width: 100%;
-        height: 14rem;
+        height: 9rem;
     }
 
     .project span {
@@ -775,7 +775,7 @@ footer {
 
 }
 
-/* Responsive 730px */
+
 @media(max-width: 700px) {
     
     .profile-details h1 {
@@ -783,7 +783,7 @@ footer {
     }
 
     .screenshot {
-        height: 11rem;
+        height: 17rem;
 
     }
  
@@ -808,11 +808,22 @@ footer {
 @media(max-width: 640px) {
 
     .screenshot {
-        height: 10rem;
+        height: 14rem;
 
     }
 
 }
+
+
+@media(max-width: 580px) {
+
+    .screenshot {
+        height: 12rem;
+
+    }
+
+}
+
 
 /* Responsive 500px */
 @media(max-width: 500px) {
@@ -908,7 +919,7 @@ footer {
     }
 
     .screenshot {
-        height: 12rem;
+        height: 11rem;
     }
 
     .project .cta-link {
