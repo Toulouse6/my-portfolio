@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/ta-favicon.png" type="image/x-icon">
+    <title>Tal Argaman | Full-Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Nav Menu -->
+    <nav>
+        <a href="#about" onclick="resetFilter()">About</a>
+        <a href="#projects" onclick="resetFilter()">All Projects</a>
+    </nav>
+
+    <!-- Header -->
+    <header id="about">
+
+        <video autoplay muted loop playsinline>
+            <source src="./assets/dark-clouds.mp4" type="video/mp4">
+        </video>
+
+        <div class="profile-section">
+            <div>
+                <img src="./assets/images/headshot.png" alt="Tal Argaman" class="headshot">
+
+                <!-- About -->
+                <div class="profile-details">
+                    <h1>Tal Argaman | Full-Stack Developer</h1>
+                    <p class="contact">
+                        +972-54-660-8628 |
+                        <a href="mailto:tal.argamanbib@gmail.com" target="_blank">tal.argamanbib@gmail.com</a> |
+                        <a href="https://github.com/Toulouse6" target="_blank" rel="noopener noreferrer">GitHub</a> |
+                        <a href="https://www.linkedin.com/in/tal-argaman-aharoni-05bb07122/" target="_blank"
+                            rel="noopener noreferrer">LinkedIn</a><br>
+                        <a href="assets/my-cv.pdf" target="_blank" rel="noopener noreferrer" class="cv">My CV ↓</a>
+                    </p>
+
+                    <p class="my-des">
+                        A Full-Stack Developer with an extensive marketing background and over 9 years of experience
+                        leading digital projects, eager to leverage my hands-on expertise in building and optimizing web
+                        applications in my next challenge.
+                    </p>
+
+                    <!-- Stack Icons Mobile -->
+                    <span class="select-tech-mobile">Sort by tech:</span>
+                    <div class="tech-stack-header-mobile" id="mobile-tech-icons">
+
+                        <div class="tech-icon">
+                            <img src="assets/logos/angular-logo.png" alt="Angular" data-tech="Angular"
+                                onclick="filterProjects('Angular')">
+                            <span class="tooltip">Angular</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/react-logo.png" alt="React" data-tech="React"
+                                onclick="filterProjects('React')">
+                            <span class="tooltip">React</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/nodejs-logo.png" alt="Node.js" data-tech="Node.js"
+                                onclick="filterProjects('Node.js')">
+                            <span class="tooltip">Node.js</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/firebase-logo.png" alt="Firebase.js" data-tech="firebase"
+                                onclick="filterProjects('Firebase')">
+                            <span class="tooltip">Firebase</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/rxjs-logo.png" alt="RxJS" data-tech="RxJS"
+                                onclick="filterProjects('RxJS')">
+                            <span class="tooltip">RxJS</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/nest-logo.png" alt="Nest" data-tech="Nest"
+                                onclick="filterProjects('Nest')">
+                            <span class="tooltip">Nest</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/gpt-logo.png" alt="GPT" data-tech="GPT"
+                                onclick="filterProjects('GPT')">
+                            <span class="tooltip">GPT4</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/canvas-logo.png" alt="Canvas" data-tech="Canvas"
+                                onclick="filterProjects('Canvas')">
+                            <span class="tooltip">Canvas</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/redux-logo.png" alt="Redux" data-tech="Redux"
+                                onclick="filterProjects('Redux')">
+                            <span class="tooltip">Redux</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/express-logo.png" alt="Express" data-tech="Express"
+                                onclick="filterProjects('Express')">
+                            <span class="tooltip">Express</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/restapi-logo.png" alt="RESTful API" data-tech="RESTful API"
+                                onclick="filterProjects('RESTful API')">
+                            <span class="tooltip">RESTful API</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/ang-material.png" alt="Angular Material" data-tech="Angular Material"
+                                onclick="filterProjects('Angular Material')">
+                            <span class="tooltip">Angular Material</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/material-ui.png" alt="Material UI" data-tech="Material UI"
+                                onclick="filterProjects('Material UI')">
+                            <span class="tooltip">Material UI</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/docker-logo.png" alt="Docker" data-tech="Docker"
+                                onclick="filterProjects('Docker')">
+                            <span class="tooltip">Docker</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/typescript-logo.png" alt="TypeScript" data-tech="TypeScript"
+                                onclick="filterProjects('TypeScript')">
+                            <span class="tooltip">TypeScript</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/js-logo.png" alt="JavaScript" data-tech="JavaScript"
+                                onclick="filterProjects('JavaScript')">
+                            <span class="tooltip">JavaScript</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/jquery-logo.png" alt="jQuery" data-tech="jQuery"
+                                onclick="filterProjects('jQuery')">
+                            <span class="tooltip">jQuery</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/html-logo.png" alt="HTML" data-tech="HTML"
+                                onclick="filterProjects('HTML')">
+                            <span class="tooltip">HTML</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/css-logo.png" alt="CSS" data-tech="CSS"
+                                onclick="filterProjects('CSS')">
+                            <span class="tooltip">CSS</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/sql-logo.png" alt="SQL" data-tech="SQL"
+                                onclick="filterProjects('MySQL')">
+                            <span class="tooltip">SQL</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/hubspot-logo.png" alt="HubSpot" data-tech="HubSpot"
+                                onclick="filterProjects('HubSpot')">
+                            <span class="tooltip">HubSpot</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/wordpress-logo.png" alt="WordPress" data-tech="WordPress"
+                                onclick="filterProjects('WordPress')">
+                            <span class="tooltip">WordPress</span>
+                        </div>
+
+                    </div>
+
+                    <!-- Stack Icons Desktop -->
+                    <span class="select-tech">Sort by tech:</span>
+                    <div class="tech-stack-header" id="desktop-tech-icons">
+
+                        <div class="tech-icon">
+                            <img src="assets/logos/angular-logo.png" alt="Angular" data-tech="Angular"
+                                onclick="filterProjects('Angular')">
+                            <span class="tooltip">Angular</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/react-logo.png" alt="React" data-tech="React"
+                                onclick="filterProjects('React')">
+                            <span class="tooltip">React</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/nodejs-logo.png" alt="Node.js" data-tech="Node.js"
+                                onclick="filterProjects('Node.js')">
+                            <span class="tooltip">Node.js</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/firebase-logo.png" alt="Firebase.js" data-tech="firebase"
+                                onclick="filterProjects('Firebase')">
+                            <span class="tooltip">Firebase</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/rxjs-logo.png" alt="RxJS" data-tech="RxJS"
+                                onclick="filterProjects('RxJS')">
+                            <span class="tooltip">RxJS</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/nest-logo.png" alt="Nest" data-tech="Nest"
+                                onclick="filterProjects('Nest')">
+                            <span class="tooltip">Nest</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/gpt-logo.png" alt="GPT" data-tech="GPT"
+                                onclick="filterProjects('GPT')">
+                            <span class="tooltip">GPT4</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/canvas-logo.png" alt="Canvas" data-tech="Canvas"
+                                onclick="filterProjects('Canvas')">
+                            <span class="tooltip">Canvas</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/redux-logo.png" alt="Redux" data-tech="Redux"
+                                onclick="filterProjects('Redux')">
+                            <span class="tooltip">Redux</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/express-logo.png" alt="Express" data-tech="Express"
+                                onclick="filterProjects('Express')">
+                            <span class="tooltip">Express</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/restapi-logo.png" alt="RESTful API" data-tech="RESTful API"
+                                onclick="filterProjects('RESTful API')">
+                            <span class="tooltip">RESTful API</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/ang-material.png" alt="Angular Material" data-tech="Angular Material"
+                                onclick="filterProjects('Angular Material')">
+                            <span class="tooltip">Angular Material</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/material-ui.png" alt="Material UI" data-tech="Material UI"
+                                onclick="filterProjects('Material UI')">
+                            <span class="tooltip">Material UI</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/docker-logo.png" alt="Docker" data-tech="Docker"
+                                onclick="filterProjects('Docker')">
+                            <span class="tooltip">Docker</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/typescript-logo.png" alt="TypeScript" data-tech="TypeScript"
+                                onclick="filterProjects('TypeScript')">
+                            <span class="tooltip">TypeScript</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/js-logo.png" alt="JavaScript" data-tech="JavaScript"
+                                onclick="filterProjects('JavaScript')">
+                            <span class="tooltip">JavaScript</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/jquery-logo.png" alt="jQuery" data-tech="jQuery"
+                                onclick="filterProjects('jQuery')">
+                            <span class="tooltip">jQuery</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/html-logo.png" alt="HTML" data-tech="HTML"
+                                onclick="filterProjects('HTML')">
+                            <span class="tooltip">HTML</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/css-logo.png" alt="CSS" data-tech="CSS"
+                                onclick="filterProjects('CSS')">
+                            <span class="tooltip">CSS</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/sql-logo.png" alt="SQL" data-tech="SQL"
+                                onclick="filterProjects('MySQL')">
+                            <span class="tooltip">SQL</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/hubspot-logo.png" alt="HubSpot" data-tech="HubSpot"
+                                onclick="filterProjects('HubSpot')">
+                            <span class="tooltip">HubSpot</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="assets/logos/wordpress-logo.png" alt="WordPress" data-tech="WordPress"
+                                onclick="filterProjects('WordPress')">
+                            <span class="tooltip">WordPress</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Project -->
+    <main class="projects-container">
+        <section id="filtered-section" class="hidden"></section>
+
+        <!-- All Project -->
+        <section id="projects">
+
+            <h2>All Projects</h2>
+            <div class="project-gallery">
+
+                <!-- UVeye Platform 
+                <div class="project" data-techs="Angular RxJS TypeScript Bootstrap HTML CSS">
+                    <a href="https://github.com/Toulouse6/uveye-platform/" target="_blank" rel="noopener noreferrer">
+                        <img class="screenshot" src="./assets/screenshots/uveye-platform.gif" alt="uveye-platform">
+                    </a>
+                    <div class="description">
+                        <h3>The UVeye Platform</h3>
+                        <p>Automated vehicle inspection platform overview.</p>
+                        <span>© All rights reserved to UVeye inc. 2024</span>
+                    </div>
+                    <div class="tech-stack">
+                        <img src="assets/logos/angular-logo.png" alt="Angular">
+                        <img src="assets/logos/rxjs-logo.png" alt="RxJS">
+                        <img src="assets/logos/typescript-logo.png" alt="TypeScript">
+                        <img src="assets/logos/bootstrap-logo.png" alt="Bootstrap">
+                        <img src="assets/logos/html-logo.png" alt="HTML">
+                        <img src="assets/logos/css-logo.png" alt="CSS">
+                    </div>
+                    <a class="cta-link" href="https://github.com/Toulouse6/uveye-platform/" target="_blank"
+                        rel="noopener noreferrer">Showcase</a>
+                </div>
+
+                -->
+
+                <!-- Madame Palm -->
+                <div class="project" data-techs="GPT Firebase Angular RxJS Express Canvas TypeScript HTML CSS">
+                    <a href="https://madame-palm.web.app/" target="_blank" rel="noopener noreferrer">
+                        <img class="screenshot" src="assets/screenshots/madame-palm-screen.png" alt="madame-palm-screen">
+                    </a>
+                    <div class="description">
+                        <h3>Madame Palm</h3>
+                        <p>Angular-Firebase app delivering AI-driven palm readings via GPT-4 Vision API.</p>
+                        <div class="tech-stack">
+                            <img src="assets/logos/firebase-logo.png" alt="Firebase">
+                            <img src="assets/logos/gpt-logo.png" alt="GPT">
+                            <img src="assets/logos/angular-logo.png" alt="Angular">
+                            <img src="assets/logos/rxjs-logo.png" alt="RxJS">
+                            <img src="assets/logos/express-logo.png" alt="Express">
+                            <img src="assets/logos/canvas-logo.png" alt="Canvas">
+                            <img src="assets/logos/typescript-logo.png" alt="TypeScript">
+                            <img src="assets/logos/html-logo.png" alt="HTML">
+                            <img src="assets/logos/css-logo.png" alt="CSS">
+                        </div>
+                        <a class="cta-link" href="https://madame-palm.web.app/" target="_blank"
+                            rel="noopener noreferrer">
+                            Firebase Page</a>
+                        <a class="cta-link" href="https://github.com/Toulouse6/madame-palm/" target="_blank"
+                            rel="noopener noreferrer">
+                            Repository</a>
+                    </div>
+                </div>
+
+                <!-- Vacation Prov -->
+                <div class="project"
+                    data-techs="React Node.js Express Nest Redux TypeScript Docker jQuery Bootstrap Canvas MySQL HTML CSS">
+                    <a href="https://toulouse6.github.io/vacation-prov-frontend/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img class="screenshot" src="./assets/screenshots/vacation-prov.gif" alt="vacation-prov">
+                    </a>
+                    <div class="description">
+                        <h3>Vacation Provocation</h3>
+                        <p>React based vacation management app with dynamic user & admin interfaces.</p>
+                        <div class="tech-stack">
+                            <img src="assets/logos/react-logo.png" alt="React">
+                            <img src="assets/logos/nodejs-logo.png" alt="Node.js">
+                            <img src="assets/logos/express-logo.png" alt="Express">
+                            <img src="assets/logos/nest-logo.png" alt="Nest">
+                            <img src="assets/logos/redux-logo.png" alt="Redux">
+                            <img src="assets/logos/typescript-logo.png" alt="TypeScript">
+                            <img src="assets/logos/docker-logo.png" alt="Docker">
+                            <img src="assets/logos/bootstrap-logo.png" alt="Bootstrap">
+                            <img src="assets/logos/canvas-logo.png" alt="Canvas">
+                            <img src="assets/logos/jquery-logo.png" alt="jQuery">
+                            <img src="assets/logos/sql-logo.png" alt="MySQL">
+                            <img src="assets/logos/html-logo.png" alt="HTML">
+                            <img src="assets/logos/css-logo.png" alt="CSS">
+                        </div>
+                        <a class="cta-link" href="https://toulouse6.github.io/vacation-prov-frontend/" target="_blank"
+                            rel="noopener noreferrer">Git Page</a>
+                        <a class="cta-link" href="https://github.com/Toulouse6/vacation-prov-frontend/" target="_blank"
+                            rel="noopener noreferrer">Frontend Rep</a>
+                        <a class="cta-link" href="https://github.com/Toulouse6/vacation-provocation-full-stack/"
+                            target="_blank" rel="noopener noreferrer">Full-Stack Rep</a>
+                    </div>
+                </div>
+
+
+                <!-- Tekken -->
+                <div class="project" data-techs="Angular RxJS TypeScript HTML CSS">
+                    <a href="https://toulouse6.github.io/tekken-tournament/" target="_blank" rel="noopener noreferrer">
+                        <img class="screenshot" src="assets/screenshots/tekken-tournament.gif" alt="tekken-tournament">
+                    </a>
+                    <div class="description">
+                        <h3>Tekken Tournament</h3>
+                        <p>Angular-based game featuring smooth animations and a mobile-friendly game
+                            mode.</p>
+                        <div class="tech-stack">
+                            <img src="assets/logos/angular-logo.png" alt="Angular">
+                            <img src="assets/logos/rxjs-logo.png" alt="RxJS">
+                            <img src="assets/logos/typescript-logo.png" alt="TypeScript">
+                            <img src="assets/logos/html-logo.png" alt="HTML">
+                            <img src="assets/logos/css-logo.png" alt="CSS">
+                        </div>
+                        <a class="cta-link" href="https://toulouse6.github.io/tekken-tournament/" target="_blank"
+                            rel="noopener noreferrer">Git
+                            Page</a>
+                        <a class="cta-link" href="https://github.com/Toulouse6/tekken-tournament" target="_blank"
+                            rel="noopener noreferrer">Repository</a>
+                    </div>
+                </div>
+
+
+                <!-- Pokemon -->
+                <div class="project" data-techs="Angular RxJS TypeScript HTML CSS Bootstrap">
+                    <a href="https://toulouse6.github.io/pokemon-evolution-lab/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img class="screenshot" src="assets/screenshots/pokemon-lab.gif" alt="pokemon-evolution-lab">
+                    </a>
+                    <div class="description">
+                        <h3>Pokemon Evolution Lab</h3>
+                        <p>Angular based app for mastering Pokémon insights, evolving them to full power.</p>
+                        <div class="tech-stack">
+                            <img src="assets/logos/angular-logo.png" alt="Angular">
+                            <img src="assets/logos/rxjs-logo.png" alt="RxJS">
+                            <img src="assets/logos/typescript-logo.png" alt="TypeScript">
+                            <img src="assets/logos/bootstrap-logo.png" alt="Bootstrap">
+                            <img src="assets/logos/html-logo.png" alt="HTML">
+                            <img src="assets/logos/css-logo.png" alt="CSS">
+                        </div>
+                        <a class="cta-link" href="https://toulouse6.github.io/pokemon-evolution-lab/" target="_blank"
+                            rel="noopener noreferrer">Git Page</a>
+                        <a class="cta-link" href="https://github.com/Toulouse6/pokemon-evolution-lab/" target="_blank"
+                            rel="noopener noreferrer">Repository</a>
+                    </div>
+                </div>
+
+
+                <!-- BlinkTap -->
+                <div class="project" data-techs="React Node.js Express RESTful API Material UI TypeScript HTML CSS"> <a
+                        href="https://toulouse6.github.io/blink-tap/" target="_blank" rel="noopener noreferrer">
+                        <img class="screenshot" src="assets/screenshots/blink-tap.gif" alt="blink-tap">
+                    </a>
+                    <div class="description">
+                        <h3>BlinkTap</h3>
+                        <p>A fast-paced, reflex-based React game powered by a Node.js API.</p>
+                        <div class="tech-stack">
+                            <img src="assets/logos/react-logo.png" alt="React">
+                            <img src="assets/logos/nodejs-logo.png" alt="Node.js">
+                            <img src="assets/logos/express-logo.png" alt="Express">
+                            <img src="assets/logos/typescript-logo.png" alt="TypeScript">
+                            <img src="assets/logos/restapi-logo.png" alt="RestfulAPI">
+                            <img src="assets/logos/material-ui.png" alt="Material UI">
+                            <img src="assets/logos/html-logo.png" alt="HTML">
+                            <img src="assets/logos/css-logo.png" alt="CSS">
+                        </div>
+                        <a class="cta-link" href="https://toulouse6.github.io/blink-tap/" target="_blank"
+                            rel="noopener noreferrer">
+                            Git Page</a>
+                        <a class="cta-link" href="https://github.com/Toulouse6/blink-tap/" target="_blank"
+                            rel="noopener noreferrer">
+                            Repository</a>
+                    </div>
+                </div>
+
+
+                <!-- Boutique Store -->
+                <div class="project" data-techs="Angular RxJS TypeScript RESTful API Angular Material HTML CSS">
+                    <a href="https://toulouse6.github.io/boutique-store/" target="_blank" rel="noopener noreferrer">
+                        <img class="screenshot" src="assets/screenshots/boutique.gif" alt="boutique-store-screen">
+                    </a>
+                    <div class="description">
+                        <h3>Boutique Store</h3>
+                        <p>Angular-based app for buying fashion items fetched from a remote API.</p>
+                        <div class="tech-stack">
+                            <img src="assets/logos/angular-logo.png" alt="Angular">
+                            <img src="assets/logos/rxjs-logo.png" alt="RxJS">
+                            <img src="assets/logos/typescript-logo.png" alt="TypeScript">
+                            <img src="assets/logos/restapi-logo.png" alt="RestfulAPI">
+                            <img src="assets/logos/ang-material.png" alt="Angular Material">
+                            <img src="assets/logos/html-logo.png" alt="HTML">
+                            <img src="assets/logos/css-logo.png" alt="CSS">
+                        </div>
+                        <a class="cta-link" href="https://toulouse6.github.io/boutique-store/" target="_blank"
+                            rel="noopener noreferrer">
+                            Git Page</a>
+                        <a class="cta-link" href="https://cors-anywhere.herokuapp.com/corsdemo" target="_blank"
+                            rel="noopener noreferrer">
+                            API Access</a>
+                        <a class="cta-link" href="https://github.com/Toulouse6/boutique-store/" target="_blank"
+                            rel="noopener noreferrer">
+                            Repository</a>
+                    </div>
+                </div>
+
+
+                <!-- Calculator -->
+                <div class="project" data-techs="Angular TypeScript RxJS jQuery Bootstrap HTML CSS HubSpot">
+                    <a href="https://toulouse6.github.io/car-dealers-calculator/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img class="screenshot" src="assets/screenshots/uveye-calculator.gif" alt="uveye-calculator">
+                    </a>
+                    <div class="description">
+                        <h3>UVeye ROI Calculator</h3>
+                        <p>UVeye's Calculator for Car Dealerships.</p>
+                        <span>© All rights reserved to UVeye inc. 2024</span>
+                    </div>
+                    <div class="tech-stack">
+                        <img src="assets/logos/angular-logo.png" alt="Angular">
+                        <img src="assets/logos/rxjs-logo.png" alt="RxJS">
+                        <img src="assets/logos/typescript-logo.png" alt="TypeScript">
+                        <img src="assets/logos/jquery-logo.png" alt="jQuery">
+                        <img src="assets/logos/bootstrap-logo.png" alt="Bootstrap">
+                        <img src="assets/logos/html-logo.png" alt="HTML">
+                        <img src="assets/logos/css-logo.png" alt="CSS">
+                        <img src="assets/logos/hubspot-logo.png" alt="HubSpot">
+                    </div>
+                    <a class="cta-link" href="https://toulouse6.github.io/car-dealers-calculator/" target="_blank"
+                        rel="noopener noreferrer">Git
+                        Page</a>
+                    <a class="cta-link" href="https://github.com/Toulouse6/car-dealers-calculator/" target="_blank"
+                        rel="noopener noreferrer">Repository</a>
+                </div>
+
+
+                <!-- Careers -->
+                <div class="project" data-techs="RESTful API jQuery HTML CSS HubSpot">
+                    <a href="https://toulouse6.github.io/uveye-careers/" target="_blank" rel="noopener noreferrer">
+                        <img class="screenshot" src="assets/screenshots/uveye-careers.gif" alt="uveye-careers">
+                    </a>
+                    <div class="description">
+                        <h3>UVeye Careers</h3>
+                        <p>UVeye's career portal, integrating job listings and applicant tools.</p>
+                        <span>© All rights reserved to UVeye inc. 2024</span>
+                    </div>
+                    <div class="tech-stack">
+                        <img src="assets/logos/restapi-logo.png" alt="RestfulAPI">
+                        <img src="assets/logos/js-logo.png" alt="JavaScript">
+                        <img src="assets/logos/jquery-logo.png" alt="jQuery">
+                        <img src="assets/logos/html-logo.png" alt="HTML">
+                        <img src="assets/logos/css-logo.png" alt="CSS">
+                        <img src="assets/logos/hubspot-logo.png" alt="HubSpot">
+                    </div>
+                    <a class="cta-link" href="https://toulouse6.github.io/uveye-careers/" target="_blank"
+                        rel="noopener noreferrer">Git Page</a>
+                    <a class="cta-link" href="https://github.com/Toulouse6/uveye-careers/" target="_blank"
+                        rel="noopener noreferrer">Repository</a>
+                </div>
+
+
+                <!-- Exodia Legacy -->
+                <div class="project" data-techs="Angular RxJS TypeScript HTML CSS Bootstrap">
+                    <a href="https://toulouse6.github.io/exodia-legacy/" target="_blank" rel="noopener noreferrer">
+                        <img class="screenshot" src="assets/screenshots/exodia-legacy.gif" alt="exodia-legacy">
+                    </a>
+                    <div class="description">
+                        <h3>Exodia Legacy</h3>
+                        <p>Complete the Forbidden Assembly of Exodia to unleash its ultimate power.</p>
+                        <div class="tech-stack">
+                            <img src="assets/logos/angular-logo.png" alt="Angular">
+                            <img src="assets/logos/rxjs-logo.png" alt="RxJS">
+                            <img src="assets/logos/typescript-logo.png" alt="TypeScript">
+                            <img src="assets/logos/bootstrap-logo.png" alt="Bootstrap">
+                            <img src="assets/logos/html-logo.png" alt="HTML">
+                            <img src="assets/logos/css-logo.png" alt="CSS">
+                        </div>
+                        <a class="cta-link" href="https://toulouse6.github.io/exodia-legacy/" target="_blank"
+                            rel="noopener noreferrer">Git
+                            Page</a>
+                        <a class="cta-link" href="https://github.com/Toulouse6/exodia-legacy/" target="_blank"
+                            rel="noopener noreferrer">Repository</a>
+                    </div>
+                </div>
+
+
+                <!-- CryptoLand -->
+                <div class="project" data-techs="JavaScript HTML CSS Bootstrap RESTful API Canvas">
+                    <a href="https://toulouse6.github.io/crypto-land/" target="_blank" rel="noopener noreferrer">
+                        <img class="screenshot" src="assets/screenshots/cryptoland.gif" alt="cryptoland">
+                    </a>
+                    <div class="description">
+                        <h3>Cryptoland</h3>
+                        <p>API app for real-time Cryptocurrency price tracking.</p>
+                        <div class="tech-stack">
+                            <img src="assets/logos/js-logo.png" alt="JavaScript">
+                            <img src="assets/logos/restapi-logo.png" alt="RestfulAPI">
+                            <img src="assets/logos/canvas-logo.png" alt="Canvas">
+                            <img src="assets/logos/bootstrap-logo.png" alt="Bootstrap">
+                            <img src="assets/logos/html-logo.png" alt="HTML">
+                            <img src="assets/logos/css-logo.png" alt="CSS">
+                        </div>
+                        <a class="cta-link" href="https://toulouse6.github.io/crypto-land/" target="_blank"
+                            rel="noopener noreferrer">Git Page</a>
+                        <a class="cta-link" href="https://github.com/Toulouse6/crypto-land/" target="_blank"
+                            rel="noopener noreferrer">Repository</a>
+                    </div>
+                </div>
+
+
+                <!-- Lucky Note Deck -->
+                <div class="project" data-techs="JavaScript HTML CSS">
+                    <a href="https://toulouse6.github.io/lucky-note-deck/" target="_blank" rel="noopener noreferrer">
+                        <img class="screenshot" src="assets/screenshots/lucky-deck.gif" alt="lucky-note-deck">
+                    </a>
+                    <div class="description">
+                        <h3>Lucky Note Deck</h3>
+                        <p>Task competition app featuring a unique Poker-themed UI.</p>
+                        <div class="tech-stack">
+                            <img src="assets/logos/js-logo.png" alt="JavaScript">
+                            <img src="assets/logos/html-logo.png" alt="HTML">
+                            <img src="assets/logos/css-logo.png" alt="CSS">
+                        </div>
+                        <a class="cta-link" href="https://toulouse6.github.io/lucky-note-deck/" target="_blank"
+                            rel="noopener noreferrer">Git Page</a>
+                        <a class="cta-link" href="https://github.com/Toulouse6/lucky-note-deck/" target="_blank"
+                            rel="noopener noreferrer">Repository</a>
+                    </div>
+                </div>
+
+
+                <!-- UVeye Website -->
+                <div class="project" data-techs="JavaScript HTML CSS HubSpot Bootstrap WordPress">
+                    <a href="https://www.uveye.com/" target="_blank" rel="noopener noreferrer"><img class="screenshot"
+                            src="assets/screenshots/uveye-website.gif" alt="uveye-website">
+                    </a>
+                    <div class="description">
+                        <h3>The UVeye Website</h3>
+                        <p>UVeye is an Automotive company specializing in automatic inspection.</p>
+                        <span>© All rights reserved to UVeye inc. 2024</span>
+                    </div>
+                    <div class="tech-stack">
+                        <img src="assets/logos/js-logo.png" alt="JavaScript">
+                        <img src="assets/logos/html-logo.png" alt="HTML">
+                        <img src="assets/logos/css-logo.png" alt="CSS">
+                        <img src="assets/logos/bootstrap-logo.png" alt="Bootstrap">
+                        <img src="assets/logos/wordpress-logo.png" alt="WordPress">
+                        <img src="assets/logos/hubspot-logo.png" alt="HubSpot">
+                    </div>
+                    <a class="cta-link" href="https://www.uveye.com/" target="_blank" rel="noopener noreferrer">Live
+                        page</a>
+                </div>
+
+
+                <!-- Zeex Website -->
+                <div class="project" data-techs="JavaScript HTML CSS Bootstrap WordPress">
+                    <a href="https://www.zeex.me/" target="_blank" rel="noopener noreferrer">
+                        <img class="screenshot" src="./assets/screenshots/zeex-website.gif" alt="zeex-website">
+                    </a>
+                    <div class="description">
+                        <h3>The Zeex.me Website</h3>
+                        <p>Zeex offers a streamlined Blockchain-based decentralized application.</p>
+                        <span>© All rights reserved to Zeex 2018</span>
+                        <div class="tech-stack">
+                            <img src="assets/logos/wordpress-logo.png" alt="WordPress">
+                            <img src="assets/logos/js-logo.png" alt="JavaScript">
+                            <img src="assets/logos/html-logo.png" alt="HTML">
+                            <img src="assets/logos/css-logo.png" alt="CSS">
+                            <img src="assets/logos/bootstrap-logo.png" alt="Bootstrap">
+                        </div>
+                        <a class="cta-link" href="https://www.zeex.me/" target="_blank" rel="noopener noreferrer">Live
+                            Page</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; All rights reserved to Tal Argaman | 2025</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
