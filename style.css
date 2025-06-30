@@ -71,6 +71,7 @@ body {
 
 /* Navigation Menu */
 nav {
+    font-family: cocogoose-light, sans-serif;
     display: flex;
     justify-content: center;
     gap: 6rem;
@@ -201,7 +202,7 @@ header,
     display: inline-flex;
     flex-wrap: nowrap;
     font-size: 0.8vw;
-    font-family: ocogoose-light, sans-serif;
+    font-family: cocogoose-light, sans-serif;
     letter-spacing: 0.05em;
     line-height: 1.4em;
     text-transform: capitalize;
@@ -262,14 +263,14 @@ header,
 }
 
 .select-tech {
-    font-family: ocogoose-light, sans-serif;
+    font-family: cocogoose-light, sans-serif;
     font-size: 1.2vw;
     font-weight: 600;
     color: var(--blue-glow);
 }
 
 .select-tech-mobile {
-    font-family: ocogoose-light, sans-serif;
+    font-family: cocogoose-light, sans-serif;
     font-weight: 600;
     color: var(--blue-glow);
     display: none;
@@ -387,7 +388,7 @@ section {
 }
 
 section h2 {
-    font-family: ocogoose-light, sans-serif;
+    font-family: cocogoose-light, sans-serif;
     margin: 0.5rem 0 1.5rem 0;
     color: #e1ecf2;
     font-size: 3vh;
@@ -463,7 +464,7 @@ nav,
 }
 
 .project .description h3 {
-    font-family: ocogoose-light, sans-serif;
+    font-family: cocogoose-light, sans-serif;
     color: var(--blue-glow);
     margin-top: 5%;
     font-size: 1.6vw;
@@ -495,6 +496,7 @@ nav,
 
 /* Footer */
 footer {
+    font-family: cocogoose-light, sans-serif;
     text-align: center;
     padding: 1rem 0;
     height: 10vh;
@@ -504,7 +506,7 @@ footer {
     margin: 4rem auto 0;
     color: #e1ecf2;
     background-color: var(--blue-glow);
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 
