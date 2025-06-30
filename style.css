@@ -4,6 +4,12 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'cocogoose-light';
+    src: url('assets/fonts/cocogoose-light.ttf') format('truetype');
+    font-display: swap;
+}
+
 @keyframes fadeInPage {
     from {
         opacity: 0;
@@ -167,15 +173,16 @@ header,
 }
 
 .logo-text {
+    flex-wrap: nowrap;
+    font-family: cocogoose-light, sans-serif;
     font-size: 2.5vw;
-    font-weight: 900;
+    text-transform: uppercase;
+    font-weight: 800;
     line-height: 1.2;
     color: var(--text-red);
-    text-transform: uppercase;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
 
 .my-des {
     font-size: 1.2vw;
@@ -194,7 +201,7 @@ header,
     display: inline-flex;
     flex-wrap: nowrap;
     font-size: 0.8vw;
-    font-family: inherit;
+    font-family: ocogoose-light, sans-serif;
     letter-spacing: 0.05em;
     line-height: 1.4em;
     text-transform: capitalize;
@@ -255,13 +262,15 @@ header,
 }
 
 .select-tech {
+    font-family: ocogoose-light, sans-serif;
     font-size: 1.2vw;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--blue-glow);
 }
 
 .select-tech-mobile {
-    font-weight: 500;
+    font-family: ocogoose-light, sans-serif;
+    font-weight: 600;
     color: var(--blue-glow);
     display: none;
 }
@@ -378,6 +387,7 @@ section {
 }
 
 section h2 {
+    font-family: ocogoose-light, sans-serif;
     margin: 0.5rem 0 1.5rem 0;
     color: #e1ecf2;
     font-size: 3vh;
@@ -453,9 +463,11 @@ nav,
 }
 
 .project .description h3 {
+    font-family: ocogoose-light, sans-serif;
     color: var(--blue-glow);
     margin-top: 5%;
     font-size: 1.6vw;
+    font-weight: 500;
 }
 
 .project span {
@@ -788,7 +800,7 @@ footer {
     }
 
     .profile-details h1 {
-        font-size: 4.2vw;
+        font-size: 4vw;
         width: 100%;
         margin-top: 1.8rem;
     }
@@ -909,8 +921,7 @@ footer {
     }
 
     .profile-details h1 {
-        font-size: 4.5vw;
-        white-space: nowrap;
+        font-size: 4vw;
         margin-top: 1rem;
     }
 
