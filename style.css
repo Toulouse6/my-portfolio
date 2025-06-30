@@ -915,15 +915,9 @@ footer {
     }
 
     .profile-details h1 {
+        font-size: 4.5vw;
+        white-space: nowrap;
         margin-top: 1rem;
-    }
-
-}
-
-@media(max-width: 390px) {
-
-    .profile-details h1 {
-        font-size: 3.5vw;
     }
 
 }
