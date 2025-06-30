@@ -35,17 +35,17 @@
     --blue-glow: #1d2a36;
     /* Buzz Purple */
 
-    --cta: #228B22;
-    --cta-light: rgba(76, 175, 80, 0.2);
-    --cta-shine: rgba(76, 175, 80, 0.4);
+    --cta: #1b9e58;
+    --cta-light: rgba(27, 158, 88, 0.2);
+    --cta-shine: rgba(27, 158, 88, 0.4);
 
     --text-darkest: #424546;
     /* Leave as is */
-    --text-red: #e5352f;
+    --text-red: #cc141e;
     /* Toy Story red */
 
-    --white-shadow-20: rgba(255, 255, 255, 0.2);
-    --white-shadow-10: rgba(255, 255, 255, 0.1);
+    --white-shadow-20: rgba(255, 255, 255, 0.5);
+    --white-shadow-10: rgba(255, 255, 255, 0.2);
 }
 
 
@@ -385,7 +385,7 @@ section {
 
 section h2 {
     margin: 0.5rem 0 1.5rem 0;
-    color: white;
+    color: #e1ecf2;
     font-size: 3vh;
     font-weight: 500;
 }
@@ -421,7 +421,7 @@ nav,
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 15px;
     overflow: hidden;
-    border: 1px solid white;
+    border: 1px solid #e1ecf2;
     box-shadow: 0 2px 10px var(--white-shadow-10);
     transform: translateY(20px);
     animation: fadeInProject 0.8s ease-in-out forwards;
@@ -496,10 +496,10 @@ footer {
     align-items: center;
     justify-content: center;
     margin: 4rem auto 0;
-    color: white;
+    color: #30afcf;
     background-color: var(--blue-glow);
     border-top: 1px solid #30afcf;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 
