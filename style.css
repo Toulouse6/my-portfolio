@@ -27,7 +27,7 @@
 }
 
 :root {
-    --bg-dark: #85aab9;
+    --bg-dark: #6a9aa8;
     /* Sky Blue */
     --bg-header: #ffffff;
     /* White for header clouds */
@@ -87,7 +87,7 @@ a {
 }
 
 nav a {
-    color: #30afcf;
+    color: #e1ecf2;
 }
 
 nav a:hover {
@@ -209,7 +209,7 @@ header,
     overflow: hidden;
     border-radius: 5px;
     background-color: var(--cta);
-    color: white;
+    color: #e1ecf2;
     border: 1px solid transparent;
     transition: all 0.3s;
     margin: 0.1rem 0.1rem 0.5rem 0.1rem !important;
@@ -496,7 +496,7 @@ footer {
     align-items: center;
     justify-content: center;
     margin: 4rem auto 0;
-    color: #30afcf;
+    color: #e1ecf2;
     background-color: var(--blue-glow);
     border-top: 1px solid #30afcf;
     letter-spacing: 2px;
