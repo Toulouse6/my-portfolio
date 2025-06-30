@@ -28,21 +28,17 @@
 
 :root {
     --bg-dark: #6a9aa8;
-    /* Sky Blue */
     --bg-header: #ffffff;
-    /* White for header clouds */
+
     --bg-nav: #1d407d;
     --blue-glow: #1d2a36;
-    /* Buzz Purple */
 
     --cta: #1b9e58;
     --cta-light: rgba(27, 158, 88, 0.2);
     --cta-shine: rgba(27, 158, 88, 0.4);
 
     --text-darkest: #424546;
-    /* Leave as is */
     --text-red: #cc141e;
-    /* Toy Story red */
 
     --white-shadow-20: rgba(255, 255, 255, 0.5);
     --white-shadow-10: rgba(255, 255, 255, 0.2);
@@ -77,7 +73,6 @@ nav {
     width: 100%;
     position: fixed;
     background-color: var(--blue-glow);
-    border-bottom: 1px solid #30afcf;
     z-index: 2;
 }
 
@@ -185,7 +180,7 @@ header,
 .my-des {
     font-size: 1.2vw;
     width: 100%;
-    color: var(--text-darkest);
+    color: black;
     margin: 0 0 1.5rem;
     line-height: 1.5;
 }
@@ -497,7 +492,6 @@ footer {
     margin: 4rem auto 0;
     color: #e1ecf2;
     background-color: var(--blue-glow);
-    border-top: 1px solid #30afcf;
     letter-spacing: 2px;
 }
 
