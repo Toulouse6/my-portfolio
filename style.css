@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'PeaceSans';
-    src: url('assets/fonts/PeaceSans.ttf') format('truetype');
+    font-family: 'MonaSans';
+    src: url('assets/fonts/MonaSans-Regular.ttf') format('truetype');
     font-display: swap;
 }
 
@@ -58,7 +58,7 @@
 html,
 body {
     max-width: 100%;
-    font-family: 'Mona Sans Regular', sans-serif;
+    font-family: 'MonaSans', sans-serif;
     background-color: var(--bg-dark);
     overflow-x: hidden;
     margin: 0 auto;
@@ -172,7 +172,6 @@ header,
 }
 
 .logo-text {
-    font-family: 'PeaceSans', sans-serif;
     font-size: 2.5vw;
     font-weight: 900;
     line-height: 1.2;
