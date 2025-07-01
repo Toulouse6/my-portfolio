@@ -194,6 +194,7 @@ header,
     width: 100%;
     color: var(--text-darkest);
     margin: 0 0 1.5rem;
+    padding-top: 0.5rem;
     line-height: 1.5;
 }
 
@@ -560,8 +561,7 @@ footer {
         font-size: 1.1vw;
     }
 
-    .contact,
-    .my-des {
+    .contact {
         padding-top: 0.2rem;
     }
 
@@ -825,7 +825,7 @@ footer {
     }
 
     section {
-        padding-top: 0rem;
+        padding-top: 0.2rem;
         max-width: 100%;
     }
 
@@ -856,6 +856,10 @@ footer {
     .select-tech,
     .my-des {
         font-size: 3.5vw;
+    }
+
+    .my-des {
+        margin: 0;
     }
 
     .select-tech-mobile {
@@ -924,7 +928,7 @@ footer {
 
     .select-tech-mobile {
         margin-bottom: 1rem;
-        font-size: 0.8rem;
+        font-size: 0.5rem;
     }
 
     .my-des {
@@ -933,6 +937,10 @@ footer {
 
     .cta-link {
         font-size: 2.3vw;
+    }
+
+    section {
+        padding-top: 0.5rem;
     }
 
     .profile-details h1 {
