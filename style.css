@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'MonaSans';
-    src: url('assets/fonts/MonaSans-Regular.ttf') format('truetype');
+    font-family: 'metropolis';
+    src: url('assets/fonts/metropolis.otf') format('truetype');
     font-display: swap;
 }
 
@@ -33,17 +33,21 @@
 }
 
 :root {
-    --bg-dark: #6a9aa8;
-    --bg-header: #ffffff;
+    --body-blue: conic-gradient(from 180deg at center,
+            #6a9aa8,
+            #7ea7b2,
+            #68939e,
+            #567c85,
+            #6a9aa8);
 
-    --bg-nav: #1d407d;
-    --blue-glow: #1d2a36;
+    --blue-dark: #1d2a36;
 
-    --cta: #1b9e58;
-    --cta-light: rgba(27, 158, 88, 0.2);
-    --cta-shine: rgba(27, 158, 88, 0.4);
+    --cta: #29987e;
+    --cta-light: rgba(41, 152, 126, 0.2);
+    --cta-shine: rgba(41, 152, 126, 0.4);
 
     --text-darkest: #424546;
+    --app-white: #e1ecf2;
     --text-red: #cc141e;
 
     --white-shadow-20: rgba(255, 255, 255, 0.5);
@@ -60,8 +64,8 @@
 html,
 body {
     max-width: 100%;
-    font-family: 'MonaSans', sans-serif;
-    background-color: var(--bg-dark);
+    font-family: 'metropolis', sans-serif;
+    background: var(--body-blue);
     overflow-x: hidden;
     margin: 0 auto;
     opacity: 0;
@@ -69,7 +73,7 @@ body {
     scroll-behavior: smooth;
 }
 
-/* Navigation Menu */
+/* Nav Menu */
 nav {
     font-family: cocogoose-light, sans-serif;
     display: flex;
@@ -79,7 +83,7 @@ nav {
     text-transform: uppercase;
     width: 100%;
     position: fixed;
-    background-color: var(--blue-glow);
+    background-color: var(--blue-dark);
     z-index: 2;
 }
 
@@ -89,7 +93,7 @@ a {
 }
 
 nav a {
-    color: #e1ecf2;
+    color: var(--app-white);
 }
 
 nav a:hover {
@@ -101,7 +105,7 @@ nav a:hover {
     color: var(--text-darkest);
 }
 
-/* HEADER */
+/* Header */
 header {
     position: relative;
     padding-top: 7rem;
@@ -135,7 +139,7 @@ header::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, #87CEEB 0%, #ffffff 100%);
+    background: linear-gradient(to bottom, #53a7cb 0%, var(--app-white) 100%);
     opacity: 0.7;
     z-index: -1;
 }
@@ -188,7 +192,7 @@ header,
 .my-des {
     font-size: 1.2vw;
     width: 100%;
-    color: black;
+    color: var(--text-darkest);
     margin: 0 0 1.5rem;
     line-height: 1.5;
 }
@@ -211,7 +215,7 @@ header,
     overflow: hidden;
     border-radius: 5px;
     background-color: var(--cta);
-    color: #e1ecf2;
+    color: white;
     border: 1px solid transparent;
     transition: all 0.3s;
     margin: 0.1rem 0.1rem 0.5rem 0.1rem !important;
@@ -250,29 +254,30 @@ header,
     transform: translateX(15em);
 }
 
-/* PROJECTS CONTAINER*/
+
+/* Projects container */
+
 .projects-container {
     width: 100%;
     min-height: 33vh;
 }
 
-/* STACK ICONS */
+
+/* Stack Icons */
 
 .active-tech {
     filter: grayscale(0%) brightness(1.5);
 }
 
 .select-tech {
-    font-family: cocogoose-light, sans-serif;
     font-size: 1.2vw;
     font-weight: 600;
-    color: var(--blue-glow);
+    color: var(--blue-dark);
 }
 
 .select-tech-mobile {
-    font-family: cocogoose-light, sans-serif;
     font-weight: 600;
-    color: var(--blue-glow);
+    color: var(--blue-dark);
     display: none;
 }
 
@@ -333,7 +338,7 @@ header,
     filter: grayscale(0%) brightness(1.5);
 }
 
-/* STACK TOOLTIPS */
+/* Tooltips */
 .tech-icon {
     position: relative;
     overflow: visible;
@@ -356,7 +361,7 @@ header,
     bottom: 125%;
     left: 50%;
     transform: translateX(-50%) translateY(4px);
-    background-color: var(--bg-dark);
+    background-color: #6a9aa8;
     color: white;
     padding: 4px 10px;
     border-radius: 4px;
@@ -375,7 +380,8 @@ header,
     transform: translateX(-50%) translateY(-4px);
 }
 
-/* SECTION */
+
+/* Projects Section */
 
 #filtered-section {
     margin-top: 2rem;
@@ -390,7 +396,7 @@ section {
 section h2 {
     font-family: cocogoose-light, sans-serif;
     margin: 0.5rem 0 1.5rem 0;
-    color: #e1ecf2;
+    color: var(--app-white);
     font-size: 3vh;
     font-weight: 500;
 }
@@ -402,10 +408,11 @@ nav,
 }
 
 .project p {
-    color: var(--bg-dark);
+    color: var(--body-blue);
 }
 
-/* PROJECT */
+/* Project ticket */
+
 .project-gallery {
     width: 100%;
     display: grid;
@@ -423,10 +430,10 @@ nav,
 .project {
     transition: opacity 0.3s ease, transform 0.3s ease;
     padding: 4%;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(225, 236, 242, 0.7);
     border-radius: 15px;
     overflow: hidden;
-    border: 1px solid #e1ecf2;
+    border: 1px solid var(--app-white);
     box-shadow: 0 2px 10px var(--white-shadow-10);
     transform: translateY(20px);
     animation: fadeInProject 0.8s ease-in-out forwards;
@@ -465,16 +472,19 @@ nav,
 
 .project .description h3 {
     font-family: cocogoose-light, sans-serif;
-    color: var(--blue-glow);
-    margin-top: 5%;
+    color: var(--blue-dark);
+    margin: 0.8rem 0 0.2rem 0;
     font-size: 1.6vw;
     font-weight: 500;
 }
 
 .project span {
+    font-weight: 600;
     color: var(--text-red);
     line-height: 1.3;
     font-size: 0.8vw;
+    display: inline-block;
+    margin-top: 0.8rem;
 }
 
 .project .description p {
@@ -496,7 +506,6 @@ nav,
 
 /* Footer */
 footer {
-    font-family: cocogoose-light, sans-serif;
     text-align: center;
     padding: 1rem 0;
     height: 10vh;
@@ -504,8 +513,8 @@ footer {
     align-items: center;
     justify-content: center;
     margin: 4rem auto 0;
-    color: #e1ecf2;
-    background-color: var(--blue-glow);
+    color: var(--app-white);
+    background-color: var(--blue-dark);
     letter-spacing: 1px;
 }
 
@@ -737,9 +746,13 @@ footer {
 
     footer,
     nav,
-    .project p,
-    .contact {
+    .project p {
         font-size: 2.2vw;
+    }
+
+    .contact {
+        white-space: nowrap;
+        font-size: 2vw;
     }
 
     .my-des {
