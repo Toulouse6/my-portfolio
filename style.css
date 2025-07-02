@@ -897,7 +897,7 @@ footer {
     .contact,
     .contact a,
     .select-tech-mobile {
-        font-size: 10px;
+        font-size: 11px;
     }
 
     .cta-link {
@@ -906,7 +906,6 @@ footer {
 
     .profile-details h1 {
         font-size: 16px;
-        margin-top: 1rem;
     }
 
     section h2,
@@ -920,7 +919,7 @@ footer {
 
     .my-des,
     .project .description p {
-        font-size: 12px;
+        font-size: 13px;
     }
 }
 
