@@ -895,7 +895,10 @@ footer {
     }
 
     .contact,
-    .contact a,
+    .contact a {
+        font-size: 10px;
+    }
+
     .select-tech-mobile {
         font-size: 11px;
     }
