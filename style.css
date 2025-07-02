@@ -171,7 +171,7 @@ header,
     width: 150px;
     padding: 0;
     height: 150px;
-    margin: 0;
+    margin: 0 0 1rem 0;
     border-radius: 50%;
     border: 1px solid #30afcf;
 }
@@ -203,7 +203,8 @@ header,
     line-height: 1.5;
 }
 
-.contact {
+.contact,
+.contact a {
     margin: 0.5rem 0;
 }
 
@@ -510,6 +511,7 @@ footer {
 
 /* Responsive */
 @media (max-width: 1300px) {
+
     .project-gallery {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -519,17 +521,29 @@ footer {
     }
 
     .profile-details h1 {
+           font-size: 35px;
         width: 100%;
     }
 
+    .my-des,
+    .project .description p {
+        font-size: 16px;
+    }
+
+    section h2,
+    .project .description h3 {
+        font-size: 28px;
+    }
+
     .cta-link {
+ font-size: 12px;
         margin-top: 0.8rem;
     }
 
     .tech-stack-header img,
     .tech-stack img {
-        height: 2.5vw !important;
-        width: 2.5vw !important;
+        height: 2.2vw !important;
+        width: 2.2vw !important;
     }
 }
 
@@ -540,29 +554,33 @@ footer {
     }
 
     .profile-details h1 {
-        font-size: 30px;
+        font-size: 32px;
         white-space: nowrap;
-        margin: 1rem 0 -0.5rem 0;
+        margin: 0 0 -0.5rem 0;
     }
 
     .contact,
     .contact a {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .cta-link {
-        font-size: 9px;
+        font-size: 12px;
         margin-top: 0.5rem;
     }
 
     .my-des,
     .project .description p {
-        font-size: 15px;
+        font-size: 16px;
+    }
+
+        .select-tech {
+            font-size: 14px;
     }
 
     section h2,
     .project .description h3 {
-        font-size: 20px;
+        font-size: 25px;
     }
 }
 
@@ -573,31 +591,34 @@ footer {
     }
 
     .profile-details h1 {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .contact,
     .contact a {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .my-des,
     .project .description p {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     section h2,
     .project .description h3 {
-        font-size: 17px;
+        font-size: 22px;
     }
 
-    .cta-link,
+    .cta-link {
+        font-size: 9px;
+    }
+
     .project span {
-        font-size: 8px;
+        font-size: 11px;
     }
 
     .select-tech-mobile {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .tech-stack-header img,
@@ -616,16 +637,8 @@ footer {
         padding-right: 3%;
     }
 
-    .headshot {
-        margin-top: -1rem;
-    }
-
     .tech-stack-header {
         display: none;
-    }
-
-    .profile-details h1 {
-        margin-top: 0.5rem;
     }
 
     .tech-stack-header-mobile {
@@ -663,8 +676,26 @@ footer {
         width: 3vw;
     }
 
+
+    .profile-details h1 {
+        font-size: 25px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    .project .description h3 {
+        font-size: 20px;
+    }
+
+    .contact,
+    .contact a {
+        font-size: 15px;
+    }
+
     .project span {
-        font-size: 9px;
+        font-size: 11px;
     }
 
     .cta-link {
@@ -673,7 +704,7 @@ footer {
 
     .contact,
     .contact a {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .contact,
@@ -705,12 +736,6 @@ footer {
         padding: 4rem 0 0 0;
     }
 
-    .profile-details h1 {
-        font-size: 22px;
-        width: 100%;
-        margin-top: 1.8rem;
-    }
-
     .project-gallery {
         width: 100%;
     }
@@ -719,8 +744,26 @@ footer {
         margin-top: 0.2rem;
     }
 
-    .headshot {
-        margin-top: 1rem;
+    .profile-details h1 {
+        font-size: 24px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    .project .description h3 {
+        font-size: 18px;
+    }
+
+    .contact,
+    .contact a {
+        font-size: 15px;
+    }
+
+    .my-des,
+    .project .description p {
+        font-size: 14px;
     }
 
     .my-des {
@@ -779,18 +822,28 @@ footer {
         gap: 0rem;
     }
 
+    .tech-stack-header-mobile img {
+        height: 4.8vw;
+        width: 4.8vw;
+    }
+
+    .tech-stack img {
+        height: 4.8vw !important;
+        width: 4.8vw !important;
+    }
+
     .project-gallery {
         grid-template-columns: repeat(1, 1fr);
     }
 
     .contact,
     .contact a {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .cta-link,
     .project span {
-        font-size: 11px;
+        font-size: 12px;
     }
 
     .profile-details h1 {
@@ -829,7 +882,7 @@ footer {
 
     nav {
         padding-top: 1.3rem;
-        gap: 40px;
+        gap: 45px;
     }
 
     .headshot {
@@ -843,18 +896,52 @@ footer {
 
     .contact,
     .contact a,
-    .project span,
+    .select-tech-mobile {
+        font-size: 10px;
+    }
+
+    .cta-link {
+        font-size: 10px;
+    }
+
+    .profile-details h1 {
+        font-size: 16px;
+        margin-top: 1rem;
+    }
+
+    section h2,
+    .project .description h3 {
+        font-size: 20px;
+    }
+
+    .project span {
+        font-size: 11px;
+    }
+
+    .my-des,
+    .project .description p {
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 330px) {
+
+    .profile-details h1 {
+        font-size: 14px;
+    }
+
+    .contact,
+    .contact a,
     .select-tech-mobile {
         font-size: 9px;
     }
 
-    .cta-link {
-        font-size: 8px;
+    .project span {
+        font-size: 10px;
     }
 
-    .profile-details h1 {
-        font-size: 14px;
-        margin-top: 1rem;
+    .cta-link {
+        font-size: 8px;
     }
 
     section h2,
@@ -866,4 +953,6 @@ footer {
     .project .description p {
         font-size: 11px;
     }
+
+
 }
