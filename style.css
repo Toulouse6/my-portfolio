@@ -391,7 +391,7 @@ header,
 section h2 {
     font-size: 25px;
     font-family: 'cocogoose-light', sans-serif;
-    margin: 2rem 0 1.5rem 0;
+    margin: 3rem 0 1.5rem 0;
     color: var(--app-white);
     font-weight: 500;
 }
