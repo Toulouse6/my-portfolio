@@ -76,7 +76,7 @@ body {
     width: 90%;
     padding-left: 5%;
     padding-right: 5%;
-    margin: 0 auto 3rem auto;
+    margin: 0 auto 1rem auto;
 }
 
 /* Nav Menu */
@@ -630,8 +630,6 @@ footer {
 
     .layout-container {
         width: 100%;
-        padding-left: 3%;
-        padding-right: 3%;
     }
 
     .tech-stack-header {
@@ -711,8 +709,8 @@ footer {
 
     .layout-container {
         width: 100%;
-        padding-left: 2%;
-        padding-right: 2%;
+        padding-left: 4%;
+        padding-right: 4%;
     }
 
     nav {
@@ -800,7 +798,7 @@ footer {
 
 }
 
-@media(max-width: 540px) {
+@media(max-width: 565px) {
 
     .layout-container {
         width: 100%;
