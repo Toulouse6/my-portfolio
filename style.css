@@ -521,7 +521,7 @@ footer {
     }
 
     .profile-details h1 {
-           font-size: 35px;
+        font-size: 35px;
         width: 100%;
     }
 
@@ -536,7 +536,7 @@ footer {
     }
 
     .cta-link {
- font-size: 12px;
+        font-size: 12px;
         margin-top: 0.8rem;
     }
 
@@ -574,8 +574,8 @@ footer {
         font-size: 16px;
     }
 
-        .select-tech {
-            font-size: 14px;
+    .select-tech {
+        font-size: 14px;
     }
 
     section h2,
@@ -891,16 +891,13 @@ footer {
     }
 
     .select-tech-mobile {
-        margin: 1.5rem 0 0.5rem 0;
+        font-size: 12px;
+        margin: 1.5rem 0 0.8rem 0;
     }
 
     .contact,
     .contact a {
         font-size: 10px;
-    }
-
-    .select-tech-mobile {
-        font-size: 11px;
     }
 
     .cta-link {
@@ -917,12 +914,12 @@ footer {
     }
 
     .project span {
-        font-size: 11px;
+        font-size: 12px;
     }
 
     .my-des,
     .project .description p {
-        font-size: 13px;
+        font-size: 14px;
     }
 }
 
