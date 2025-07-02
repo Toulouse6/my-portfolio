@@ -391,7 +391,7 @@ header,
 section h2 {
     font-size: 25px;
     font-family: 'cocogoose-light', sans-serif;
-    margin: 3rem 0 1.5rem 0;
+    margin: 2rem 0 1.5rem 0;
     color: var(--app-white);
     font-weight: 500;
 }
@@ -550,6 +550,10 @@ footer {
         padding: 6.5rem 0 0 0;
     }
 
+    .headshot {
+        margin: -2rem 0 1rem 0;
+    }
+
     .profile-details h1 {
         font-size: 32px;
         white-space: nowrap;
@@ -596,7 +600,7 @@ footer {
         font-size: 15px;
     }
 
-      .contact,
+    .contact,
     .contact a {
         font-size: 16px;
     }
@@ -671,7 +675,6 @@ footer {
         width: 3vw;
     }
 
-
     .profile-details h1 {
         font-size: 25px;
     }
@@ -724,6 +727,10 @@ footer {
 
     header {
         padding: 4rem 0 0 0;
+    }
+
+    .headshot {
+        margin: 0 0 1rem 0;
     }
 
     .project-gallery {
@@ -878,6 +885,7 @@ footer {
     .headshot {
         width: 120px;
         height: 120px;
+        margin: 0.5rem 0 1rem 0;
     }
 
     .select-tech-mobile {
@@ -901,6 +909,10 @@ footer {
     section h2,
     .project .description h3 {
         font-size: 20px;
+    }
+
+    section h2 {
+        margin: 1.5rem 0 1rem 0;
     }
 
     .project span {
