@@ -33,23 +33,41 @@
 }
 
 :root {
-    --body-blue: conic-gradient(from 180deg at center,
-            #6a9aa8,
-            #7ea7b2,
-            #68939e,
-            #567c85,
-            #6a9aa8);
+
+    /* Overlay */
+    --overlay: linear-gradient(to bottom, #53a7cb 0%, var(--app-white) 100%);
+
+    /* Backgrounds */
+    --body-blue: linear-gradient(135deg,
+            #5c8996 0%,
+            #6d9aa8 50%,
+            #5c8996 100%);
 
     --blue-dark: #1d2a36;
+    --blue-gray: #445862;
 
+    /* Borders & Nav */
+    --blue-sky: #b7d4e1;
+
+    /* Buttons */
     --cta: #29987e;
     --cta-light: rgba(41, 152, 126, 0.2);
     --cta-shine: rgba(41, 152, 126, 0.4);
 
+    --linkedin: #5c94a2;
+    --linkedin-light: rgba(92, 148, 162, 0.2);
+    --linkedin-shine: rgba(92, 148, 162, 0.4);
+
+    --github: #2f2f2f;
+    --github-light: rgba(47, 47, 47, 0.2);
+    --github-shine: rgba(255, 255, 255, 0.3);
+
+    /* Texts */
     --text-darkest: #424546;
-    --app-white: #e1ecf2;
+    --app-white: #edf7fc;
     --text-red: #cc141e;
 
+    /* Shadows */
     --white-shadow-20: rgba(255, 255, 255, 0.5);
     --white-shadow-10: rgba(255, 255, 255, 0.2);
 }
@@ -72,6 +90,7 @@ body {
     scroll-behavior: smooth;
 }
 
+/* Layout */
 .layout-container {
     width: 90%;
     padding-left: 5%;
@@ -100,16 +119,17 @@ a {
 
 nav a {
     font-size: 12px;
-    color: var(--app-white);
+    color: var(--blue-sky);
 }
 
 nav a:hover {
-    color: white;
+    color: var(--app-white);
+
 }
 
 .contact,
 .contact a {
-    font-size: 19px;
+    font-size: 20px;
     color: var(--text-darkest);
     margin: 0.5rem 0;
     white-space: nowrap;
@@ -148,7 +168,7 @@ header::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, #53a7cb 0%, var(--app-white) 100%);
+    background: var(--overlay);
     opacity: 0.7;
     z-index: -1;
 }
@@ -175,7 +195,7 @@ header,
     height: 150px;
     margin: 0 0 1rem 0;
     border-radius: 50%;
-    border: 1px solid #30afcf;
+    border: 1px solid var(--blue-sky);
 }
 
 .profile-details {
@@ -191,7 +211,7 @@ header,
     text-transform: uppercase;
     font-weight: 800;
     line-height: 1.2;
-    color: var(--text-red);
+    color: var(--blue-gray);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -226,9 +246,9 @@ header,
     padding: 0.5em 1em;
 }
 
+/* CV Button*/
 .cv {
-    margin: 0.1rem 0.1rem 0.5rem 0.1rem !important;
-    padding: 0.5em 3em;
+    padding: 0.5em 2em;
 }
 
 .cta-link:hover {
@@ -256,6 +276,48 @@ header,
 
 .cta-link:hover::before {
     transform: translateX(15em);
+}
+
+/* GitHub Button */
+.cta-link.github {
+    background-color: var(--github);
+}
+
+.cta-link.github:hover {
+    border-color: var(--github);
+    background: linear-gradient(to right,
+            var(--github-light),
+            var(--github-light));
+    color: var(--github);
+}
+
+.cta-link.github::before {
+    background: linear-gradient(to right,
+            transparent 1%,
+            var(--github-shine) 40%,
+            var(--github-shine) 60%,
+            transparent 100%);
+}
+
+/* LinkedIn Button */
+.cta-link.linkedin {
+    background-color: var(--linkedin);
+}
+
+.cta-link.linkedin:hover {
+    border-color: var(--linkedin);
+    background: linear-gradient(to right,
+            var(--linkedin-light),
+            var(--linkedin-light));
+    color: var(--linkedin);
+}
+
+.cta-link.linkedin::before {
+    background: linear-gradient(to right,
+            transparent 1%,
+            var(--linkedin-shine) 40%,
+            var(--linkedin-shine) 60%,
+            transparent 100%);
 }
 
 /* Stack Icons */
@@ -357,9 +419,9 @@ header,
     bottom: 125%;
     left: 50%;
     transform: translateX(-50%) translateY(4px);
-    background-color: #6a9aa8;
+    background: var(--body-blue);
     color: white;
-    padding: 4px 10px;
+    padding: 4px 8px;
     border-radius: 4px;
     white-space: nowrap;
     pointer-events: none;
@@ -371,7 +433,7 @@ header,
 
 .tech-icon:hover .tooltip {
     visibility: visible;
-    opacity: 0.8;
+    opacity: 0.9;
     transform: translateX(-50%) translateY(-4px);
 }
 
@@ -389,7 +451,7 @@ header,
 }
 
 section h2 {
-    font-size: 25px;
+    font-size: 24px;
     font-family: 'cocogoose-light', sans-serif;
     margin: 2rem 0 1.5rem 0;
     color: var(--app-white);
@@ -454,9 +516,10 @@ section h2 {
 }
 
 .project .description h3 {
-    font-size: 25px;
+    white-space: nowrap;
+    font-size: 24px;
     font-family: 'cocogoose-light', sans-serif;
-    color: var(--blue-dark);
+    color: var(--blue-gray);
     margin: 0.8rem 0 0.5rem 0;
     font-weight: 500;
 }
@@ -482,7 +545,7 @@ section h2 {
     width: 100%;
     aspect-ratio: 16 / 9;
     border-radius: 15px;
-    border: 1px solid #30afcf;
+    border: 1px solid var(--blue-sky);
     display: block;
     margin: 0 auto;
     object-fit: cover;
@@ -500,7 +563,7 @@ footer {
     align-items: center;
     justify-content: center;
     margin: 4rem auto 0;
-    color: var(--app-white);
+    color: var(--blue-sky);
     background-color: var(--blue-dark);
     letter-spacing: 1px;
 }
@@ -562,7 +625,7 @@ footer {
 
     .contact,
     .contact a {
-        font-size: 17px;
+        font-size: 18px;
     }
 
     .cta-link {
@@ -600,14 +663,9 @@ footer {
         font-size: 15px;
     }
 
-    .contact,
-    .contact a {
-        font-size: 16px;
-    }
-
     section h2,
     .project .description h3 {
-        font-size: 22px;
+        font-size: 21px;
     }
 
     .cta-link {
@@ -676,7 +734,7 @@ footer {
     }
 
     .profile-details h1 {
-        font-size: 25px;
+        font-size: 26px;
     }
 
     section h2 {
@@ -684,7 +742,7 @@ footer {
     }
 
     .project .description h3 {
-        font-size: 20px;
+        font-size: 19px;
     }
 
     .project span {
@@ -692,12 +750,7 @@ footer {
     }
 
     .cta-link {
-        font-size: 8px;
-    }
-
-    .contact,
-    .contact a {
-        font-size: 13px;
+        font-size: 9px;
     }
 
     .contact,
@@ -708,7 +761,7 @@ footer {
 
 }
 
-@media(max-width: 600px) {
+@media(max-width: 635px) {
 
     .layout-container {
         width: 100%;
@@ -746,16 +799,11 @@ footer {
     }
 
     section h2 {
-        font-size: 24px;
+        font-size: 17px;
     }
 
     .project .description h3 {
-        font-size: 18px;
-    }
-
-    .contact,
-    .contact a {
-        font-size: 15px;
+        font-size: 17px;
     }
 
     .my-des,
@@ -794,7 +842,12 @@ footer {
         width: 4vw !important;
     }
 
+    .project span {
+        font-size: 10px;
+    }
+
     .cta-link {
+        font-size: 8px;
         margin: 1rem 0 2rem 0;
         line-height: 1.8;
     }
@@ -833,18 +886,18 @@ footer {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .contact,
-    .contact a {
-        font-size: 13px;
-    }
-
     .cta-link,
     .project span {
         font-size: 12px;
     }
 
+    .contact,
+    .contact a {
+        font-size: 16px;
+    }
+
     .profile-details h1 {
-        font-size: 20px;
+        font-size: 19px;
     }
 
     section h2,
@@ -883,19 +936,19 @@ footer {
     }
 
     .headshot {
-        width: 120px;
-        height: 120px;
+        width: 110px;
+        height: 110px;
         margin: 0.5rem 0 1rem 0;
     }
 
     .select-tech-mobile {
-        font-size: 12px;
+        font-size: 13px;
         margin: 1.5rem 0 0.8rem 0;
     }
 
     .contact,
     .contact a {
-        font-size: 11px;
+        font-size: 13px;
     }
 
     .cta-link {
@@ -903,12 +956,12 @@ footer {
     }
 
     .profile-details h1 {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     section h2,
     .project .description h3 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     section h2 {
@@ -916,12 +969,16 @@ footer {
     }
 
     .project span {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .my-des,
     .project .description p {
         font-size: 14px;
+    }
+
+    .tooltip {
+        font-size: 8px;
     }
 }
 
@@ -934,7 +991,7 @@ footer {
     .contact,
     .contact a,
     .select-tech-mobile {
-        font-size: 9px;
+        font-size: 12px;
     }
 
     .project span {
@@ -942,17 +999,17 @@ footer {
     }
 
     .cta-link {
-        font-size: 8px;
+        font-size: 9px;
     }
 
     section h2,
     .project .description h3 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .my-des,
     .project .description p {
-        font-size: 11px;
+        font-size: 13px;
     }
 
 
