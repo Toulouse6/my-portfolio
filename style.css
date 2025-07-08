@@ -217,7 +217,7 @@ header,
 }
 
 .my-des {
-    font-size: 16px;
+    font-size: 20px;
     width: 100%;
     color: var(--text-darkest);
     margin: 0 0 1.5rem;
@@ -327,7 +327,7 @@ header,
 }
 
 .select-tech {
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 600;
     color: var(--blue-dark);
 }
@@ -587,7 +587,7 @@ footer {
 
     .my-des,
     .project .description p {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     section h2,
