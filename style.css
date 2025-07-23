@@ -38,10 +38,7 @@
     --overlay: linear-gradient(to bottom, #53a7cb 0%, var(--app-white) 100%);
 
     /* Backgrounds */
-    --body-blue: linear-gradient(135deg,
-            #5c8996 0%,
-            #6d9aa8 50%,
-            #5c8996 100%);
+    --body-blue: #5e8692;
 
     --blue-dark: #1d2a36;
     --blue-gray: #445862;
