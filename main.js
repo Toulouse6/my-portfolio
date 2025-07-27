@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
         setTimeout(() => {
             headshot.src = originalSrc;
         }, 200); 
-    }, 8000); 
+    }, 7000); 
 });
 
 
