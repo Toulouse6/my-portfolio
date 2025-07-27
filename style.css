@@ -45,19 +45,21 @@
 
     /* Borders & Nav */
     --blue-sky: #b7d4e1;
+    --border-light: rgba(0, 0, 0, 0.08); 
 
     /* Buttons */
     --cta: #29987e;
-    --cta-light: rgba(41, 152, 126, 0.2);
-    --cta-shine: rgba(41, 152, 126, 0.4);
+    --cta-light: rgba(41, 152, 126, 0.25);
+    --cta-shine: rgba(255, 255, 255, 0.2);
 
     --linkedin: #5c94a2;
     --linkedin-light: rgba(92, 148, 162, 0.2);
     --linkedin-shine: rgba(92, 148, 162, 0.4);
 
     --github: #2f2f2f;
-    --github-light: rgba(47, 47, 47, 0.2);
-    --github-shine: rgba(255, 255, 255, 0.3);
+    --github-light: rgba(47, 47, 47, 0.3);
+    --github-shine: rgba(255, 255, 255, 0.15);
+
 
     /* Texts */
     --text-darkest: #424546;
@@ -472,10 +474,10 @@ section h2 {
 .project {
     transition: opacity 0.3s ease, transform 0.3s ease;
     padding: 4%;
-    background-color: rgba(225, 236, 242, 0.7);
+    background-color: rgba(237, 247, 252, 0.92);
     border-radius: 15px;
     overflow: hidden;
-    border: 1px solid var(--app-white);
+    border: 1px solid var(--border-light);
     box-shadow: 0 2px 10px var(--white-shadow-10);
     transform: translateY(20px);
     animation: fadeInProject 0.8s ease-in-out forwards;
