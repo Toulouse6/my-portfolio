@@ -49,6 +49,24 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+// Headshot wink:
+document.addEventListener("DOMContentLoaded", () => {
+    const headshot = document.querySelector(".headshot");
+
+    if (!headshot) return;
+
+    const originalSrc = "assets/images/headshot.png";
+    const winkSrc = "assets/images/wink.png";
+
+    setInterval(() => {
+        headshot.src = winkSrc;
+        setTimeout(() => {
+            headshot.src = originalSrc;
+        }, 200); 
+    }, 8000); 
+});
+
+
 // Filter projects:
 function filterProjects(selectedTech) {
     // If clicked twice, reset filter
